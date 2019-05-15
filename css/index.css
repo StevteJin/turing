@@ -237,8 +237,14 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     font-size: 26px;
 }
 
+.turing-network .dividing-line {
+    width:446px;
+    height:1px;
+    background:#EDEDED;
+    margin: 38px auto 49px;
+}
 .turing-network .turing-network-btn {
-    margin: 85px auto 196px;
+    margin: 0px auto 196px;
     width: 420px;
     height: 65px;
     line-height: 65px;
@@ -288,6 +294,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 /*Application layer design for Web3.0*/
 
 .web-second {
+    padding-top: 90px;
     overflow: hidden;
 }
 
@@ -365,7 +372,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 }
 
 .today-quota .inner-box {
-    margin: 0 auto 200px;
+    margin: 0 auto 195px;
     width: 844px;
     overflow: hidden;
     color: #FF2C7A;
@@ -388,4 +395,105 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     height: 65px;
     margin-top: 46px;
     background: url('../images/application.png');
+}
+
+/* application-layer-design */
+.fourth-title{
+    margin: 0 auto 130px;
+    width: 500px;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #484A65;
+}
+
+.fourth-title .text-before {
+    float: left;
+    border-bottom: 2px solid #FF2C7A;
+    color: #FF2C7A;
+}
+
+.fourth-title .text-after {
+    float: left;
+    border-bottom: 2px solid #484A65;
+}
+
+.application-layer-design .design-item {
+    margin-bottom: 125px;
+}
+
+.application-layer-design .design-left {
+    padding-right: 62px;
+}
+
+.application-layer-design .design-title {
+    font-weight:bold;
+    font-size:24px;
+    color:#484A65;
+    margin-bottom: 34px;
+}
+
+.application-layer-design .design-detail {
+    width:175px;
+    height: 105px;
+    font-size:14px;
+    color:#484A65;
+    line-height:26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+/* Creative team */
+.creative-team {
+    padding: 108px 0 88px;
+    background: #fff;
+    text-align: center;
+}
+
+.creative-team .fifth-title {
+    font-size: 45px;
+    font-weight: bold;
+    color:#484A65;
+    margin-bottom: 20px;
+}
+
+.creative-team .describe {
+    font-size:22px;
+    color:#8B9CB7;
+}
+
+.creative-team-item {
+    margin-top: 90px;
+    padding: 0 20px;
+}
+
+.creative-team-img {
+    margin-bottom: 44px;
+}
+
+.creative-team-name {
+    font-size:20px;
+    font-weight:bold;
+    color:#484A65;
+    text-align: left;
+    text-indent: 22px;
+}
+
+.creative-team-detail {
+    width: 246px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-size:12px;
+    color:#484A65;
+    line-height:23px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }

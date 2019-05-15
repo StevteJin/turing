@@ -71,6 +71,7 @@
             <div class="discribe">The Turing network will help global mobileinteroperability</div>
             <div class="discribe">Connected users seamlessly connect to </div>
             <div class="discribe"> the blockchain world</div>
+            <div class="dividing-line"></div>
             <div class="turing-network-btn">Understanding the Turing Chain</div>
         </div>
     </div>
@@ -97,26 +98,45 @@
         </div>
     </div>
     <!--Application layer design for Web3.0-->
-    <div>
-        <div>APPLICATION LAYER DESIGN FOR WEB3.0</div>
-        <div id="content4"></div>
-        <script id="test4" type="text/html">
-            {{each topData as value i}}
-            <div>
-                <img src="{{value.img}}" alt="">
-                <div>
-                    <div>{{value.title}}</div>
-                    <div>{{value.content}}</div>
-                </div>
+    <div class="application-layer-design">
+        <div class="container">
+            <div class="fourth-title">
+                <span class="text-before">APPLICATION</span>
+                <span class="text-after">&nbsp;LAYER DESIGN FOR WEB3.0</span>
             </div>
-            {{/each}}
-        </script>
+            <div class="row">
+                <div id="content4"></div>
+            </div>
+            <script id="test4" type="text/html">
+                {{each topData as value i}}
+                <div class="col-sm-12 col-md-6 col-lg-4 design-item">
+                    <div class="media design-media">
+                        <div class="media-left media-middle design-left">
+                            <a href="#">
+                            <img class="media-object" src="{{value.img}}" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading design-title">{{value.title}}</h4>
+                            <div class="design-detail">{{value.content}}</div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+        
     </div>
     <!--APPLICATION LAYER DESIGN FOR WEB3.0 second-->
     <div class="web-second">
         <div class="container">
-            <div class="second-title">APPLICATION LAYER DESIGN FOR WEB3.0</div>
-            <div id="content3"></div>
+            <div class="fourth-title">
+                <span class="text-before">APPLICATION</span>
+                <span class="text-after">&nbsp;LAYER DESIGN FOR WEB3.0</span>
+            </div>
+            <div class="row">
+                <div id="content3"></div>
+            </div>
             <script id="test3" type="text/html">
                 {{each centerData as value i}}
                 <div class="second-box row">
@@ -148,23 +168,30 @@
 
     <!--这里就是左右滑动的那个滑动条 end-->
     <!--Creative team-->
-    <div>
-        <div>Creative team</div>
-        <div>Under the hood, Cactus runs a small local web server for each website you're working on. This makes it possible to build your website locally, using modern web technologies, and have the results generated to a collection of flat files.</div>
-        <div id="content5"></div>
-        <script id="test5" type="text/html">
-            {{each bottomData as value i}}
-            <div>
-                <div>
-                    <img src="{{value.img}}" alt="">
-                </div>
-                <div>
-                    <div>{{value.title}}</div>
-                    <div>{{value.content}}</div>
-                </div>
+    <div class="creative-team">
+        <div class="container">
+            <div class="fifth-title">Creative team</div>
+            <div class="describe">Under the hood, Cactus runs a small local web server for each website you're working on. </div>
+            <div class="describe">This makes it possible to</div> 
+            <div class="describe">build your website locally, using modern web technologies,</div> 
+            <div class="describe">and have the results generated to a collection of flat files.</div>
+            <div class="row">
+                <div id="content5"></div>
             </div>
-            {{/each}}
-        </script>
+            <script id="test5" type="text/html">
+                {{each bottomData as value i}}
+                <div class="col-md-4 creative-team-item">
+                    <div class="creative-team-img">
+                        <img src="{{value.img}}" alt="">
+                    </div>
+                    <div>
+                        <div class="creative-team-name">{{value.title}}</div>
+                        <div class="creative-team-detail">{{value.content}}</div>
+                    </div>
+                </div>
+                {{/each}}
+            </script>
+        </div>
     </div>
     <!--页脚-->
     <footer>
