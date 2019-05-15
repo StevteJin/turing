@@ -98,15 +98,15 @@
                 </script>
             </div>
             <div class="right-box">
-                <div>
-                    <div>EPSIo</div>
+                <div class="top-box">
+                    <div class="top-name">EPSIo</div>
                     <div id="content1"></div>
                     <script id="test1" type="text/html">
                         {{each iconData as value i}}
-                        <img src="{{value}}" alt=""> {{/each}}
+                        <img class='{{value.class}}' src="{{value.src}}" alt=""> {{/each}}
                     </script>
                 </div>
-                <div>
+                <div class="bottom-box">
                     <div id="content2"></div>
                     <script id="test2" type="text/html">
                         {{each nameData as value i}}

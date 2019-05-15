@@ -5,7 +5,7 @@ var data = {
 var html = template('test', data);
 document.getElementById('content').innerHTML = html;
 
-var img_icon = ['./images/facebook.png', './images/footer_bird.png', './images/footer_camera.png', './images/footer_player.png', './images/footer_m.png'];
+var img_icon = [{ class: 'facebook', src: './images/facebook.png' }, { class: 'bird', src: './images/footer_bird.png' }, { class: 'camera', src: './images/footer_camera.png' }, { class: 'player', src: './images/footer_player.png' }, { class: 'm', src: './images/footer_m.png' }];
 var data1 = {
     iconData: img_icon
 };
