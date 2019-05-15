@@ -113,7 +113,7 @@
                     <div class="media design-media">
                         <div class="media-left media-middle design-left">
                             <a href="#">
-                            <img class="media-object" src="{{value.img}}" alt="...">
+                                <img class="media-object" src="{{value.img}}" alt="...">
                             </a>
                         </div>
                         <div class="media-body">
@@ -125,7 +125,7 @@
                 {{/each}}
             </script>
         </div>
-        
+
     </div>
     <!--APPLICATION LAYER DESIGN FOR WEB3.0 second-->
     <div class="web-second">
@@ -139,7 +139,7 @@
             </div>
             <script id="test3" type="text/html">
                 {{each centerData as value i}}
-                <div class="second-box row">
+                <div class="second-box">
                     <!--基数为12-->
                     <div class="col-sm-3 col1">
                         <div>
@@ -155,14 +155,29 @@
             </script>
         </div>
     </div>
+
     <!--这里就是左右滑动的那个滑动条 start-->
     <link rel="stylesheet" href="./css/jackwei.slider.css">
     <script src="./js/jackwei.slider.js"></script>
     <div class="hua-box">
         <div class="hua-width">
-
+            <!--空盒子-->
+            <div class="empty-box container"></div>
+            <div class="big-hua-box">
+                <div id="content6"></div>
+                <script id="test6" type="text/html">
+                    {{each huaData as value i}}
+                    <div class="huahua">
+                        <div class='{{value.class}} color'></div>
+                        <div class="hua-date">{{value.date}}</div>
+                        <div class="hua-title">{{value.title}}</div>
+                        <div class="hua-content">{{value.content}}</div>
+                    </div>
+                    {{/each}}
+                </script>
+            </div>
+            <div id="sliderParent"></div>
         </div>
-        <div id="sliderParent"></div>
     </div>
     <script src="./js/huadong.js"></script>
 
@@ -172,8 +187,8 @@
         <div class="container">
             <div class="fifth-title">Creative team</div>
             <div class="describe">Under the hood, Cactus runs a small local web server for each website you're working on. </div>
-            <div class="describe">This makes it possible to</div> 
-            <div class="describe">build your website locally, using modern web technologies,</div> 
+            <div class="describe">This makes it possible to</div>
+            <div class="describe">build your website locally, using modern web technologies,</div>
             <div class="describe">and have the results generated to a collection of flat files.</div>
             <div class="row">
                 <div id="content5"></div>
