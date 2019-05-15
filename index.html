@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="css/index.css" />
     <script src="./js/template-web.js"></script>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="js/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body>
@@ -118,6 +120,7 @@
             <script id="test3" type="text/html">
                 {{each centerData as value i}}
                 <div class="second-box row">
+                    <!--基数为12-->
                     <div class="col-sm-3 col1">
                         <div>
                             <img src="{{value.img}}" alt="">
@@ -132,6 +135,18 @@
             </script>
         </div>
     </div>
+    <!--这里就是左右滑动的那个滑动条 start-->
+    <link rel="stylesheet" href="./css/jackwei.slider.css">
+    <script src="./js/jackwei.slider.js"></script>
+    <div class="hua-box">
+        <div class="hua-width">
+
+        </div>
+        <div id="sliderParent"></div>
+    </div>
+    <script src="./js/huadong.js"></script>
+
+    <!--这里就是左右滑动的那个滑动条 end-->
     <!--Creative team-->
     <div>
         <div>Creative team</div>
@@ -190,8 +205,6 @@
         </div>
     </footer>
 </body>
-<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-<script src="js/jquery/dist/jquery.min.js"></script>
 <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
 <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./js/new.js"></script>
