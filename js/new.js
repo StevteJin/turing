@@ -29,7 +29,7 @@ var center_icon = [{ class: 'c1', img: './images/img1.png', title: '1.Heterogene
 { class: 'c8', img: './images/img8.png', title: '8.Welcome the Application Layer Design of Web 3.0', content: "Supporting real distributed applications, users can control the network, business, games, social, etc.Supporting real distributed applications, users can control the network, business, games, social, etc.Supporting real distributed applications, users can control the network, business, games, social, etc.Supporting real distributed applications, users can control the network, business, games, social, etc." }
 ]
 var data3 = {
-    nameData: center_icon
+    centerData: center_icon
 };
 var html3 = template('test3', data3);
 document.getElementById('content3').innerHTML = html3;

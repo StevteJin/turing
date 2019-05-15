@@ -81,7 +81,20 @@
     </div>
     <!---->
     <div>
-
+        <div id="content3"></div>
+        <script id="test3" type="text/html">
+            {{each centerData as value i}}
+            <div>
+                <div>
+                    <img src="{{value.img}}" alt="">
+                </div>
+                <div>
+                    <div>{{value.title}}</div>
+                    <div>{{value.content}}</div>
+                </div>
+            </div>
+            {{/each}}
+        </script>
     </div>
     <!--页脚-->
     <footer>
