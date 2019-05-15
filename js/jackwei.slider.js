@@ -159,8 +159,3 @@
 
 })(jQuery, window, document);
 
-$(function(){
-    console.log('我是花花',$('.huahua').length);
-    var bigWidth=$('.huahua').width()*$('.huahua').length;
-    $(".big-hua-box #content6").css("width",bigWidth+'px');
-})
