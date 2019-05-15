@@ -249,11 +249,14 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     color: #fff;
 }
 
+
 /* block-chain-network */
+
 .block-chain-network {
     /* height: 298px; */
     text-align: center;
 }
+
 .block-chain-network .second-title {
     font-weight: bold;
     color: #484A65;
@@ -264,30 +267,78 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     margin-top: 42px;
     margin-bottom: 94px;
     color: #8B9CB7;
-    font-size:22px;
+    font-size: 22px;
 }
 
+
 /* today-quota */
+
 .today-quota {
     /* height: 502px; */
     text-align: center;
 }
+
 .today-quota .third-title {
-    font-size:53px;
-    font-weight:bold;
-    color:#FF2C7A;
+    font-size: 53px;
+    font-weight: bold;
+    color: #FF2C7A;
 }
+
+
+/*Application layer design for Web3.0*/
+
+.web-second {
+    overflow: hidden;
+}
+
+.web-second .second-title {}
+
+.web-second #content3 {}
+
+.web-second #content3 .second-box {
+    background-color: #ffffff;
+    overflow: hidden;
+    margin-top: 90px;
+    height: 457px;
+}
+
+.web-second #content3 .second-box .col1 div {
+    border-right: 1px solid #EDEDED;
+    width: 270px;
+    height: 270px;
+    margin-top: 93.5px;
+}
+
+.web-second #content3 .second-box .col1 img {
+    width: 230px;
+    height: 230px;
+    margin-left: 24px;
+}
+
+.web-second #content3 .second-box .col2 {}
+
+.web-second #content3 .second-box .col2 .col-title {
+    color: #484A65;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 96px;
+    margin-bottom: 71px;
+}
+
+.web-second #content3 .second-box .col2 .col-content {}
+
 .today-quota .complete-progress {
     margin: 44px auto 0;
-    width:844px;
-    height:65px;
-    border:2px solid #FF2C7A;
-    border-radius:2px;
+    width: 844px;
+    height: 65px;
+    border: 2px solid #FF2C7A;
+    border-radius: 2px;
     position: relative;
 }
+
 .today-quota .finish-progress {
     position: absolute;
-    top:0;
+    top: 0;
     width: 591px;
     height: 0;
     border-top: 61px solid #FF2C7A;
@@ -296,7 +347,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 
 .today-quota .finish-count {
     position: absolute;
-    top:0;
+    top: 0;
     z-index: 1;
     width: 591px;
     height: 61px;
@@ -305,7 +356,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     text-align: right;
     line-height: 61px;
     color: #fff;
-    font-size:20px;
+    font-size: 20px;
 }
 
 .today-quota .inner-box {
@@ -320,16 +371,16 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 
 .today-quota .inner-box .investors {
     float: left;
-    width:420px;
-    height:65px;
+    width: 420px;
+    height: 65px;
     margin-top: 20px;
     background: url('../images/investors.png');
 }
 
 .today-quota .inner-box .super-node-application {
     float: right;
-    width:420px;
-    height:65px;
+    width: 420px;
+    height: 65px;
     margin-top: 46px;
     background: url('../images/application.png');
 }

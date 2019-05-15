@@ -124,22 +124,27 @@
         </div>
         
     </div>
-    <!---->
-    <div>
-        <div id="content3"></div>
-        <script id="test3" type="text/html">
-            {{each centerData as value i}}
-            <div>
-                <div>
-                    <img src="{{value.img}}" alt="">
+    <!--APPLICATION LAYER DESIGN FOR WEB3.0 second-->
+    <div class="web-second">
+        <div class="container">
+            <div class="second-title">APPLICATION LAYER DESIGN FOR WEB3.0</div>
+            <div id="content3"></div>
+            <script id="test3" type="text/html">
+                {{each centerData as value i}}
+                <div class="second-box row">
+                    <div class="col-sm-3 col1">
+                        <div>
+                            <img src="{{value.img}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col2">
+                        <div class="col-title">{{value.title}}</div>
+                        <div class="col-content">{{value.content}}</div>
+                    </div>
                 </div>
-                <div>
-                    <div>{{value.title}}</div>
-                    <div>{{value.content}}</div>
-                </div>
-            </div>
-            {{/each}}
-        </script>
+                {{/each}}
+            </script>
+        </div>
     </div>
     <!--Creative team-->
     <div>
