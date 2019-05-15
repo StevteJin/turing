@@ -9,8 +9,8 @@
     top: 0;
     z-index: -1;
     width: 100%;
-    height: 2706px;
-    background: url(../images/bg.png) 100% no-repeat;
+    height: 2734px;
+    background: url(../images/bg.png)100% no-repeat;
 }
 
 .navbar-inverse {
@@ -34,9 +34,6 @@ footer {
     background-color: #525562;
     width: 100%;
     height: 445px;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
     overflow: hidden;
 }
 
@@ -147,8 +144,7 @@ footer .content-box .center-box #content div {
 
 .turing-network {
     width: 100%;
-    height: 1080px;
-    /*background: url(../images/bg1.png) 100% 100% no-repeat;*/
+    height: 932px;
     padding-top: 295px;
     box-sizing: border-box;
     text-align: center;
@@ -167,7 +163,8 @@ footer .content-box .center-box #content div {
     font-size: 26px;
 }
 
-.turing-network .btn {
+.turing-network .turing-network-btn {
+    margin: 85px auto 0;
     width: 420px;
     height: 65px;
     line-height: 65px;
@@ -178,8 +175,30 @@ footer .content-box .center-box #content div {
     color: #fff;
 }
 
-.small-little {
+/* block-chain-network */
+.block-chain-network {
+    height: 298px;
+    text-align: center;
+}
+.block-chain-network .second-title {
     font-weight: bold;
     color: #484A65;
     font-size: 45px;
+}
+
+.block-chain-network .try-yourself {
+    margin-top: 42px;
+    color: #8B9CB7;
+    font-size:22px;
+}
+
+/* today-quota */
+.today-quota {
+    height: 502px;
+    text-align: center;
+}
+.today-quota .third-title {
+    font-size:53px;
+    font-weight:bold;
+    color:#FF2C7A;
 }
