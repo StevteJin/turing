@@ -67,7 +67,7 @@
         </nav>
     </div>
     <!-- turing network-->
-    <div class="turing-network">
+    <div class="turing-network do-jump">
         <div class="container">
             <div class="title a7">TURING NETWORK</div>
             <div class="discribe a8">The Turing network will help global mobileinteroperability</div>
@@ -78,7 +78,7 @@
         </div>
     </div>
     <!-- Block Chain Network -->
-    <div class="block-chain-network">
+    <div class="block-chain-network do-jump">
         <div class="container">
             <div class="second-title a12">Business Web 3.0 Application Layer</div>
             <div class="second-title a13">Block Chain Network</div>
@@ -101,7 +101,7 @@
         </div>
     </div>
     <!--Application layer design for Web3.0-->
-    <div class="application-layer-design">
+    <div class="application-layer-design do-jump">
         <div class="container">
             <div class="fourth-title">
                 <span class="text-before a19">APPLICATION</span>
@@ -131,7 +131,7 @@
 
     </div>
     <!--APPLICATION LAYER DESIGN FOR WEB3.0 second-->
-    <div class="web-second">
+    <div class="web-second do-jump">
         <div class="container">
             <div class="fourth-title">
                 <span class="text-before a19">APPLICATION</span>
@@ -162,7 +162,7 @@
     <!--这里就是左右滑动的那个滑动条 start-->
     <link rel="stylesheet" href="./css/jackwei.slider.css">
     <script src="./js/jackwei.slider.js"></script>
-    <div class="hua-box">
+    <div class="hua-box do-jump">
         <div class="hua-width">
             <!--空盒子-->
             <div class="empty-box container"></div>
@@ -186,7 +186,7 @@
 
     <!--这里就是左右滑动的那个滑动条 end-->
     <!--Creative team-->
-    <div class="creative-team">
+    <div class="creative-team do-jump">
         <div class="container">
             <div class="fifth-title a63">Creative team</div>
             <div class="describe a64">Under the hood, Cactus runs a small local web server for each website you're working
@@ -326,9 +326,12 @@
             if ($(this).index() != len - 1 && $(this).index() != len - 2) {
                 $(this).addClass('selected').siblings().removeClass('selected');
                 //导航平滑滚动
+                jump($(this).index());
             }
         })
-
+        function jump(index) {
+            $('html,body').animate({'scrollTop':$('.do-jump').eq(index).offset().top},500)
+        }
         // 显示、隐藏弹窗
         $("#investors").click(function () {
             $("body").css("overflow", "hidden");
