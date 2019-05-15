@@ -53,6 +53,8 @@ $(function () {
                 $('.a16').html($.i18n.prop('a16'));
                 $('.a17').html($.i18n.prop('a17'));
                 $('.a18').html($.i18n.prop('a18'));
+                $('.a19').html($.i18n.prop('a19'));
+                $('.a20').html($.i18n.prop('a20'));
             }
         });
     }
