@@ -238,11 +238,12 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 }
 
 .turing-network .dividing-line {
-    width:446px;
-    height:1px;
-    background:#EDEDED;
+    width: 446px;
+    height: 1px;
+    background: #EDEDED;
     margin: 38px auto 49px;
 }
+
 .turing-network .turing-network-btn {
     margin: 0px auto 196px;
     width: 420px;
@@ -399,8 +400,10 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     cursor: pointer;
 }
 
+
 /* application-layer-design */
-.fourth-title{
+
+.fourth-title {
     margin: 0 auto 130px;
     width: 500px;
     overflow: hidden;
@@ -430,18 +433,18 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 }
 
 .application-layer-design .design-title {
-    font-weight:bold;
-    font-size:24px;
-    color:#484A65;
+    font-weight: bold;
+    font-size: 24px;
+    color: #484A65;
     margin-bottom: 34px;
 }
 
 .application-layer-design .design-detail {
-    width:175px;
+    width: 175px;
     height: 105px;
-    font-size:14px;
-    color:#484A65;
-    line-height:26px;
+    font-size: 14px;
+    color: #484A65;
+    line-height: 26px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -449,23 +452,26 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     -webkit-box-orient: vertical;
 }
 
+
 /* Creative team */
+
 .creative-team {
     padding: 108px 0 88px;
     background: #fff;
     text-align: center;
+    margin-top: -120px!important;
 }
 
 .creative-team .fifth-title {
     font-size: 45px;
     font-weight: bold;
-    color:#484A65;
+    color: #484A65;
     margin-bottom: 20px;
 }
 
 .creative-team .describe {
-    font-size:22px;
-    color:#8B9CB7;
+    font-size: 22px;
+    color: #8B9CB7;
 }
 
 .creative-team-item {
@@ -478,9 +484,9 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 }
 
 .creative-team-name {
-    font-size:20px;
-    font-weight:bold;
-    color:#484A65;
+    font-size: 20px;
+    font-weight: bold;
+    color: #484A65;
     text-align: left;
     text-indent: 22px;
 }
@@ -489,9 +495,9 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     width: 246px;
     padding: 0 15px;
     box-sizing: border-box;
-    font-size:12px;
-    color:#484A65;
-    line-height:23px;
+    font-size: 12px;
+    color: #484A65;
+    line-height: 23px;
     text-align: left;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -500,12 +506,15 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     -webkit-box-orient: vertical;
 }
 
+
 /* 弹窗 */
+
 .mask {
-    width:1200px;
-    height:689px;
-    background:rgba(0,0,0,0.7);
-    border-radius:2px;
+    display: none;
+    width: 1200px;
+    height: 689px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 2px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -519,7 +528,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     line-height: 32px;
     text-align: center;
     color: #fff;
-    font-size:14px;
+    font-size: 14px;
     position: relative;
     margin-bottom: 141px;
 }
@@ -544,14 +553,14 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     text-align: center;
 }
 
-.mask .left-part .left-text{
+.mask .left-part .left-text {
     width: 315px;
     height: 97px;
     padding: 20px 31px;
     box-sizing: border-box;
-    font-size:14px;
-    color:#fff;
-    line-height:21px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 21px;
     text-align: left;
     margin: 72px auto 0;
 }
@@ -562,7 +571,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 }
 
 .mask .right-part .box {
-    width:283px;
+    width: 283px;
     border-bottom: 1px solid #595959;
 }
 
@@ -587,5 +596,5 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 
 .mask .right-part .detail {
     width: 254px;
-    line-height:26px;
+    line-height: 26px;
 }
