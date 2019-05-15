@@ -150,8 +150,8 @@
                         </div>
                     </div>
                     <div class="col-sm-7 col2">
-                        <div class="col-title">{{value.title}}</div>
-                        <div class="col-content">{{value.content}}</div>
+                        <div class="col-title {{value.a}}">{{value.title}}</div>
+                        <div class="col-content {{value.a1}}">{{value.content}}</div>
                     </div>
                 </div>
                 {{/each}}
@@ -173,8 +173,8 @@
                     <div class="huahua">
                         <div class='{{value.class}} color'></div>
                         <div class="hua-date">{{value.date}}</div>
-                        <div class="hua-title">{{value.title}}</div>
-                        <div class="hua-content">{{value.content}}</div>
+                        <div class="hua-title {{value.a}}">{{value.title}}</div>
+                        <div class="hua-content {{value.a1}}">{{value.content}}</div>
                     </div>
                     {{/each}}
                 </script>
@@ -188,12 +188,12 @@
     <!--Creative team-->
     <div class="creative-team">
         <div class="container">
-            <div class="fifth-title">Creative team</div>
-            <div class="describe">Under the hood, Cactus runs a small local web server for each website you're working
+            <div class="fifth-title a63">Creative team</div>
+            <div class="describe a64">Under the hood, Cactus runs a small local web server for each website you're working
                 on. </div>
-            <div class="describe">This makes it possible to</div>
-            <div class="describe">build your website locally, using modern web technologies,</div>
-            <div class="describe">and have the results generated to a collection of flat files.</div>
+            <div class="describe a65">This makes it possible to</div>
+            <div class="describe a66">build your website locally, using modern web technologies,</div>
+            <div class="describe a67">and have the results generated to a collection of flat files.</div>
             <div class="row">
                 <div id="content5"></div>
             </div>
@@ -204,8 +204,8 @@
                         <img src="{{value.img}}" alt="">
                     </div>
                     <div>
-                        <div class="creative-team-name">{{value.title}}</div>
-                        <div class="creative-team-detail">{{value.content}}</div>
+                        <div class="creative-team-name {{value.a}}">{{value.title}}</div>
+                        <div class="creative-team-detail {{value.a1}}">{{value.content}}</div>
                     </div>
                 </div>
                 {{/each}}
@@ -325,6 +325,7 @@
         $('.navbar-right li').click(function () {
             if ($(this).index() != len - 1 && $(this).index() != len - 2) {
                 $(this).addClass('selected').siblings().removeClass('selected');
+                //导航平滑滚动
             }
         })
 
