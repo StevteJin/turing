@@ -218,7 +218,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 
 .turing-network {
     width: 100%;
-    height: 932px;
+    /* height: 932px; */
     padding-top: 295px;
     box-sizing: border-box;
     text-align: center;
@@ -238,7 +238,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 }
 
 .turing-network .turing-network-btn {
-    margin: 85px auto 0;
+    margin: 85px auto 196px;
     width: 420px;
     height: 65px;
     line-height: 65px;
@@ -253,7 +253,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 /* block-chain-network */
 
 .block-chain-network {
-    height: 298px;
+    /* height: 298px; */
     text-align: center;
 }
 
@@ -265,6 +265,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 
 .block-chain-network .try-yourself {
     margin-top: 42px;
+    margin-bottom: 94px;
     color: #8B9CB7;
     font-size: 22px;
 }
@@ -273,7 +274,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 /* today-quota */
 
 .today-quota {
-    height: 502px;
+    /* height: 502px; */
     text-align: center;
 }
 
@@ -325,3 +326,61 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 }
 
 .web-second #content3 .second-box .col2 .col-content {}
+
+.today-quota .complete-progress {
+    margin: 44px auto 0;
+    width: 844px;
+    height: 65px;
+    border: 2px solid #FF2C7A;
+    border-radius: 2px;
+    position: relative;
+}
+
+.today-quota .finish-progress {
+    position: absolute;
+    top: 0;
+    width: 591px;
+    height: 0;
+    border-top: 61px solid #FF2C7A;
+    border-right: 15px solid transparent;
+}
+
+.today-quota .finish-count {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 591px;
+    height: 61px;
+    padding-right: 53px;
+    box-sizing: border-box;
+    text-align: right;
+    line-height: 61px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.today-quota .inner-box {
+    margin: 0 auto 200px;
+    width: 844px;
+    overflow: hidden;
+    color: #FF2C7A;
+    font-size: 26px;
+    line-height: 65px;
+    text-align: center;
+}
+
+.today-quota .inner-box .investors {
+    float: left;
+    width: 420px;
+    height: 65px;
+    margin-top: 20px;
+    background: url('../images/investors.png');
+}
+
+.today-quota .inner-box .super-node-application {
+    float: right;
+    width: 420px;
+    height: 65px;
+    margin-top: 46px;
+    background: url('../images/application.png');
+}
