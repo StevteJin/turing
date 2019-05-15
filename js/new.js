@@ -35,12 +35,12 @@ var html3 = template('test3', data3);
 document.getElementById('content3').innerHTML = html3;
 
 var top_icon = [
-    {class:'one-click',img:'./images/top-img1.png',title:'ONE-CLICK',content:'Supporting one-click issuance of passport,and using a secure hosting scheme...'},
-    {class:'management',img:'./images/top-img2.png',title:'management',content:'With the chain gover-nance model, all dec-isions are voted by the Turing coin ...'},
-    {class:'super-node ',img:'./images/top-img3.png',title:'Super Node ',content:"Node itself is applica-tion, business and Tu-ring's overall ecolo-gical prosperity"},
-    {class:'interoperability',img:'./images/top-img4.png',title:'Interoperability',content:'Self-organizing Busi-ness Alliance, Points Exchange,Equity Sharing'},
-    {class:'npos-consensus',img:'./images/top-img5.png',title:'NPOS Consensus',content:'Effective prevention of token centraliza-tion in POS block chain'},
-    {class:'cross-links',img:'./images/top-img6.png',title:'cross links',content:'Connecting Polkadot main network throu-gh bridge chain based on substrate'},
+    { class: 'one-click', img: './images/top-img1.png', title: 'ONE-CLICK', content: 'Supporting one-click issuance of passport,and using a secure hosting scheme...' },
+    { class: 'management', img: './images/top-img2.png', title: 'management', content: 'With the chain gover-nance model, all dec-isions are voted by the Turing coin ...' },
+    { class: 'super-node ', img: './images/top-img3.png', title: 'Super Node ', content: "Node itself is applica-tion, business and Tu-ring's overall ecolo-gical prosperity" },
+    { class: 'interoperability', img: './images/top-img4.png', title: 'Interoperability', content: 'Self-organizing Busi-ness Alliance, Points Exchange,Equity Sharing' },
+    { class: 'npos-consensus', img: './images/top-img5.png', title: 'NPOS Consensus', content: 'Effective prevention of token centraliza-tion in POS block chain' },
+    { class: 'cross-links', img: './images/top-img6.png', title: 'cross links', content: 'Connecting Polkadot main network throu-gh bridge chain based on substrate' },
 ]
 var data4 = {
     topData: top_icon
@@ -49,12 +49,28 @@ var html4 = template('test4', data4);
 document.getElementById('content4').innerHTML = html4;
 
 var bottom_icon = [
-    {class:'n1',img:'./images/name.png',title:'name',content:'Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly'},
-    {class:'n2',img:'./images/name.png',title:'name',content:'Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly'},
-    {class:'n3 ',img:'./images/name.png',title:'name',content:"Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly"}
+    { class: 'n1', img: './images/name.png', title: 'name', content: 'Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly' },
+    { class: 'n2', img: './images/name.png', title: 'name', content: 'Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly' },
+    { class: 'n3 ', img: './images/name.png', title: 'name', content: "Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly" }
 ]
 var data5 = {
-    bottomData:bottom_icon
+    bottomData: bottom_icon
 };
 var html5 = template('test5', data5);
 document.getElementById('content5').innerHTML = html5;
+
+
+var hua_data = [
+    { class: 'hua1', date: '2018/10/1', title: 'Research and development', content: '2018.10 Start the Turing Public Chain Project, Technical Pre-research Turing Public Chain officiallylaun-ched R&D in March 2019' },
+    { class: 'hua2', date: '2018/10/2', title: 'A commercial suite', content: '2019.8 Turing coin on-line trading 2019.8 Turing coin on-line trading 2019.8 Turing coin on-line trading 2019.8 Turing coin on-line trading' },
+    { class: 'hua3', date: '2018/5/9', title: 'Beta release', content: '2010.10 Turing Public Chain Testing- Online, Turing SDK Internal Testing Edition Released' },
+    { class: 'hua4', date: '2019/5/9', title: 'A commercial suite', content: 'Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly' },
+    { class: 'hua5', date: '2019/5/9', title: 'A commercial suite', content: 'Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly' },
+    { class: 'hua6', date: '2019/5/9', title: 'A commercial suite', content: 'Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly' },
+    { class: 'hua7', date: '2019/5/9', title: 'A commercial suite', content: 'Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly' }
+]
+var data6 = {
+    huaData: hua_data
+};
+var html6 = template('test6', data6);
+document.getElementById('content6').innerHTML = html6;

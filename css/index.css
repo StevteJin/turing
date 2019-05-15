@@ -306,33 +306,38 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     background-color: #ffffff;
     overflow: hidden;
     margin-top: 90px;
-    height: 457px;
+}
+
+.web-second #content3 .second-box .col1 {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .web-second #content3 .second-box .col1 div {
     border-right: 1px solid #EDEDED;
-    width: 270px;
-    height: 270px;
-    margin-top: 93.5px;
+    width: 90%;
 }
 
 .web-second #content3 .second-box .col1 img {
-    width: 230px;
-    height: 230px;
-    margin-left: 24px;
+    width: 85%;
+    margin-left: 8%;
 }
 
-.web-second #content3 .second-box .col2 {}
+.web-second #content3 .second-box .col2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 
 .web-second #content3 .second-box .col2 .col-title {
     color: #484A65;
     font-size: 24px;
     font-weight: bold;
-    margin-top: 96px;
-    margin-bottom: 71px;
 }
 
-.web-second #content3 .second-box .col2 .col-content {}
+.web-second #content3 .second-box .col2 .col-content {
+    line-height: 26px;
+    font-size: 14px;
+}
 
 .today-quota .complete-progress {
     margin: 44px auto 0;
