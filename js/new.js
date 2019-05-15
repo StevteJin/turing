@@ -34,14 +34,23 @@ var data3 = {
 var html3 = template('test3', data3);
 document.getElementById('content3').innerHTML = html3;
 
-var top_icon = [
-    { class: 'one-click', img: './images/top-img1.png', title: 'ONE-CLICK', content: 'Supporting one-click issuance of passport,and using a secure hosting scheme...' },
-    { class: 'management', img: './images/top-img2.png', title: 'management', content: 'With the chain gover-nance model, all dec-isions are voted by the Turing coin ...' },
-    { class: 'super-node ', img: './images/top-img3.png', title: 'Super Node ', content: "Node itself is applica-tion, business and Tu-ring's overall ecolo-gical prosperity" },
-    { class: 'interoperability', img: './images/top-img4.png', title: 'Interoperability', content: 'Self-organizing Busi-ness Alliance, Points Exchange,Equity Sharing' },
-    { class: 'npos-consensus', img: './images/top-img5.png', title: 'NPOS Consensus', content: 'Effective prevention of token centraliza-tion in POS block chain' },
-    { class: 'cross-links', img: './images/top-img6.png', title: 'cross links', content: 'Connecting Polkadot main network throu-gh bridge chain based on substrate' },
-]
+var top_icon = [];
+jQuery.i18n.properties({//加载资浏览器语言对应的资源文件
+    name: 'strings', //资源文件名称
+    path: '/i18n/', //资源文件路径
+    mode: 'map', //用Map的方式使用资源文件中的值
+    language: 'en',
+    callback: function () {//加载成功后设置显示内容
+        top_icon = [
+            { class: 'one-click',a:'a21',a1:'a27', img: './images/top-img1.png', title: $.i18n.prop('a21'), content: $.i18n.prop('a27') },
+            { class: 'management',a:'a22',a1:'a28', img: './images/top-img2.png', title: $.i18n.prop('a22'), content: $.i18n.prop('a28') },
+            { class: 'super-node ',a:'a23',a1:'a29', img: './images/top-img3.png', title: $.i18n.prop('a23'), content: $.i18n.prop('a29') },
+            { class: 'interoperability',a:'a24',a1:'a30', img: './images/top-img4.png', title: $.i18n.prop('a24'), content: $.i18n.prop('a30') },
+            { class: 'npos-consensus',a:'a25',a1:'a31', img: './images/top-img5.png', title: $.i18n.prop('a25'), content: $.i18n.prop('a31') },
+            { class: 'cross-links',a:'a26',a1:'a32', img: './images/top-img6.png', title: $.i18n.prop('a26'), content: $.i18n.prop('a32') }
+        ]
+    }});
+
 var data4 = {
     topData: top_icon
 };
