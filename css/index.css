@@ -309,7 +309,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 }
 
 .today-quota .inner-box {
-    margin: 0 auto 200px;
+    margin: 0 auto 195px;
     width: 844px;
     overflow: hidden;
     color: #FF2C7A;
@@ -334,3 +334,56 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     background: url('../images/application.png');
 }
 
+/* application-layer-design */
+.application-layer-design .fourth-title{
+    margin: 0 auto 130px;
+    width: 500px;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #484A65;
+}
+
+.application-layer-design .fourth-title .text-before {
+    float: left;
+    border-bottom: 2px solid #FF2C7A;
+    color: #FF2C7A;
+}
+
+.application-layer-design .fourth-title .text-after {
+    float: left;
+    border-bottom: 2px solid #484A65;
+}
+
+.application-layer-design .design-item {
+    margin-bottom: 120px;
+}
+
+.application-layer-design .design-left {
+    padding-right: 62px;
+}
+
+.application-layer-design .design-img {
+    margin-top: 32px;
+}
+
+.application-layer-design .design-title {
+    font-weight:bold;
+    font-size:24px;
+    color:#484A65;
+    margin-bottom: 34px;
+}
+
+.application-layer-design .design-detail {
+    width:175px;
+    height: 105px;
+    font-size:14px;
+    color:#484A65;
+    line-height:26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}

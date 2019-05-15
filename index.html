@@ -95,20 +95,34 @@
         </div>
     </div>
     <!--Application layer design for Web3.0-->
-    <div>
-        <div>Application layer design for Web3.0</div>
-        <div id="content4"></div>
-        <script id="test4" type="text/html">
-            {{each topData as value i}}
-            <div>
-                <img src="{{value.img}}" alt="">
-                <div>
-                    <div>{{value.title}}</div>
-                    <div>{{value.content}}</div>
-                </div>
+    <div class="application-layer-design">
+        <div class="container">
+            <div class="fourth-title">
+                <span class="text-before">APPLICATION</span>
+                <span class="text-after">&nbsp;LAYER DESIGN FOR WEB3.0</span>
             </div>
-            {{/each}}
-        </script>
+            <div class="row">
+                <div id="content4"></div>
+            </div>
+            <script id="test4" type="text/html">
+                {{each topData as value i}}
+                <div class="col-sm-12 col-md-6 col-lg-4 design-item">
+                    <div class="media design-media">
+                        <div class="media-left design-left">
+                            <a href="#">
+                            <img class="media-object design-img" src="{{value.img}}" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading design-title">{{value.title}}</h4>
+                            <div class="design-detail">{{value.content}}</div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+        
     </div>
     <!---->
     <div>
