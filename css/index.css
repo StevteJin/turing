@@ -178,6 +178,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 
 .navbar-inverse .navbar-nav>li {
     position: relative;
+    cursor: pointer;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -202,6 +203,10 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     display: block;
     width: 100%;
     height: 100%;
+    
+}
+
+.navbar-inverse .navbar-nav>.selected>.under-line:after {
     background: #FF2C7A;
 }
 
@@ -254,6 +259,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     border-radius: 2px;
     font-size: 14px;
     color: #fff;
+    cursor: pointer;
 }
 
 

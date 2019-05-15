@@ -36,27 +36,27 @@
                 <div class="collapse navbar-collapse" id="top-navbar-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="">Technical framework</a>
+                            <a>Technical framework</a>
                             <div class="under-line"></div>
                         </li>
                         <li>
-                            <a href="">Super node</a>
+                            <a>Super node</a>
                             <div class="under-line"></div>
                         </li>
                         <li>
-                            <a href="">Governance</a>
+                            <a>Governance</a>
                             <div class="under-line"></div>
                         </li>
                         <li>
-                            <a href="">Economic</a>
+                            <a>Economic</a>
                             <div class="under-line"></div>
                         </li>
                         <li>
-                            <a href="">White paper</a>
+                            <a>White paper</a>
                             <div class="under-line"></div>
                         </li>
                         <li>
-                            <a href="">Language switching</a>
+                            <a>Language switching</a>
                             <div class="under-line"></div>
                         </li>
                         <li><img src="images/transfer.png" class="transfer-img" /></li>
@@ -93,8 +93,8 @@
                 <div class="finish-count">Has gone 10,000,0</div>
             </div>
             <div class="inner-box">
-                <div class="investors">investors</div>
-                <div class="super-node-application">Super Node Application</div>
+                <div class="investors" id="investors">investors</div>
+                <div class="super-node-application" id="application">Super Node Application</div>
             </div>
         </div>
     </div>
@@ -248,11 +248,15 @@
         </div>
     </footer>
     <!-- 弹窗 -->
-    <div class="mask">
+    <div class="mask" id="investors-mask">
         <div class="mask-top">
             <div class="tixing"></div>
             Investment Turing
+<<<<<<< HEAD
             <img src="images/close.png" class="close-img" />
+=======
+            <img src="images/close.png" class="close-img" id="investors-mask-close"/>
+>>>>>>> c7e2ef306214b76d214a70044733642b98a9d880
         </div>
         <div>
             <div class="col-sm-8 left-part">
@@ -277,11 +281,11 @@
             </div>
         </div>
     </div>
-    <!-- <div class="mask">
+    <div class="mask" id="application-mask">
         <div class="mask-top">
             <div class="tixing"></div>
             Application for supernode
-            <img src="images/close.png" class="close-img"/>
+            <img src="images/close.png" class="close-img" id="application-mask-close"/>
         </div>
         <div>
             <div class="col-sm-8 left-part">
@@ -307,10 +311,38 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 </body>
 <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
 <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./js/new.js"></script>
+<script>
+    $(function(){
+        // 导航条选中
+        $('.navbar-right li').first().addClass("selected");
+        var len = $('.navbar-right li').length;
+        $('.navbar-right li').click(function(){
+            if($(this).index() != len -1 &&  $(this).index() != len -2) {
+                $(this).addClass('selected').siblings().removeClass('selected');
+            }
+        })
 
+        // 显示、隐藏弹窗
+        $("#investors").click(function() {
+            $("#investors-mask").css("display","block");
+        })
+        $("#investors-mask-close").click(function() {
+            $("#investors-mask").css("display","none");
+        })
+        $("#application").click(function() {
+            $("#application-mask").css("display","block");
+        })
+        $("#application-mask-close").click(function() {
+            $("#application-mask").css("display","none");
+        })
+    });
+
+
+</script>
 </html>
+
