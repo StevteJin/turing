@@ -21,12 +21,13 @@
         <nav class="navbar navbar-inverse navbar-no-bg navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-                        </button>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#top-navbar-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <a class="navbar-brand" href="index.html">
                         <img src="images/logo.png" />
                     </a>
@@ -90,6 +91,7 @@
             <div class="complete-progress">
                 <div class="finish-progress"></div>
                 <div class="finish-count">Has gone 10,000,0</div>
+                <div class="percentage">70%</div>
             </div>
             <div class="inner-box">
                 <div class="investors" id="investors">investors</div>
@@ -186,7 +188,8 @@
     <div class="creative-team">
         <div class="container">
             <div class="fifth-title">Creative team</div>
-            <div class="describe">Under the hood, Cactus runs a small local web server for each website you're working on. </div>
+            <div class="describe">Under the hood, Cactus runs a small local web server for each website you're working
+                on. </div>
             <div class="describe">This makes it possible to</div>
             <div class="describe">build your website locally, using modern web technologies,</div>
             <div class="describe">and have the results generated to a collection of flat files.</div>
@@ -251,24 +254,24 @@
         <div class="mask-top">
             <div class="tixing"></div>
             Investment Turing
-            <img src="images/close.png" class="close-img" id="investors-mask-close"/>
+            <img src="images/close.png" class="close-img" id="investors-mask-close" />
         </div>
         <div>
             <div class="col-sm-8 left-part">
-                <img src="images/er_wei_ma.png" style="margin-top: 27px;"/>
+                <img src="images/er_wei_ma.png" style="margin-top: 27px;" />
             </div>
             <div class="col-sm-4 right-part">
                 <div class="box">
                     <div class="title">
-                        OFFICIAL E 
-                        <span class="red">-</span> 
+                        OFFICIAL E
+                        <span class="red">-</span>
                         MAIL
                     </div>
                     <div class="detail">Support one-key issua nce of license,and the adoption of a secure hosting</div>
                 </div>
                 <div class="box">
                     <div class="title">
-                        SECRETARY 
+                        SECRETARY
                         <span class="red">WECHAT</span>
                     </div>
                     <div class="detail">Support one-key issuance of license,</div>
@@ -281,25 +284,26 @@
         <div class="mask-top">
             <div class="tixing"></div>
             Application for supernode
-            <img src="images/close.png" class="close-img" id="application-mask-close"/>
+            <img src="images/close.png" class="close-img" id="application-mask-close" />
         </div>
         <div>
             <div class="col-sm-8 left-part">
                 <img src="images/application1.png" />
-                <div class="left-text">Polkadot stakeholders have control over thewhich on other platforms are exclusive to minerwill be given to the</div>
+                <div class="left-text">Polkadot stakeholders have control over thewhich on other platforms are exclusive
+                    to minerwill be given to the</div>
             </div>
             <div class="col-sm-4 right-part">
                 <div class="box">
                     <div class="title">
-                        OFFICIAL E 
-                        <span class="red">-</span> 
+                        OFFICIAL E
+                        <span class="red">-</span>
                         MAIL
                     </div>
                     <div class="detail">Support one-key issua nce of license,and the adoption of a secure hosting</div>
                 </div>
                 <div class="box">
                     <div class="title">
-                        SECRETARY 
+                        SECRETARY
                         <span class="red">WECHAT</span>
                     </div>
                     <div class="detail">Support one-key issuance of license,</div>
@@ -313,32 +317,74 @@
 <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./js/new.js"></script>
 <script>
-    $(function(){
+    $(function () {
         // 导航条选中
         $('.navbar-right li').first().addClass("selected");
         var len = $('.navbar-right li').length;
-        $('.navbar-right li').click(function(){
-            if($(this).index() != len -1 &&  $(this).index() != len -2) {
+        $('.navbar-right li').click(function () {
+            if ($(this).index() != len - 1 && $(this).index() != len - 2) {
                 $(this).addClass('selected').siblings().removeClass('selected');
             }
         })
 
         // 显示、隐藏弹窗
-        $("#investors").click(function() {
-            $("#investors-mask").css("display","block");
+        $("#investors").click(function () {
+            $("body").css("overflow", "hidden");
+            $("#investors-mask").css("display", "block");
         })
-        $("#investors-mask-close").click(function() {
-            $("#investors-mask").css("display","none");
+        $("#investors-mask-close").click(function () {
+            $("body").css("overflow", "auto");
+            $("#investors-mask").css("display", "none");
         })
-        $("#application").click(function() {
-            $("#application-mask").css("display","block");
+        $("#application").click(function () {
+            $("body").css("overflow", "hidden");
+            $("#application-mask").css("display", "block");
         })
-        $("#application-mask-close").click(function() {
-            $("#application-mask").css("display","none");
+        $("#application-mask-close").click(function () {
+            $("body").css("overflow", "auto");
+            $("#application-mask").css("display", "none");
         })
+
+        // 进度条
+        var base_number = "10,000,0";
+        var percent = 50;
+        var total = percent / 100 * (base_number.replace(/,/g, ""));
+        /**
+         * 数字格式转换成千分位
+         *@param{Object}num
+         */
+        function commafy(num) {
+            if ((num + "").trim() == "") {
+                return "";
+            }
+            if (isNaN(num)) {
+                return "";
+            }
+            num = num + "";
+            if (/^.*\..*$/.test(num)) {
+                varpointIndex = num.lastIndexOf(".");
+                varintPart = num.substring(0, pointIndex);
+                varpointPart = num.substring(pointIndex + 1, num.length);
+                intPart = intPart + "";
+                var re = /(-?\d+)(\d{3})/
+                while (re.test(intPart)) {
+                    intPart = intPart.replace(re, "$1,$2")
+                }
+                num = intPart + "." + pointPart;
+            } else {
+                num = num + "";
+                var re = /(-?\d+)(\d{3})/
+                while (re.test(num)) {
+                    num = num.replace(re, "$1,$2")
+                }
+            }
+            return num;
+        }
+        total = commafy(total);
+        $(".today-quota .finish-progress").css("width", percent / 100 * 844 + "px");
+        $(".finish-count").html("Has gone " + total);
+        $(".percentage").html(percent + '%');
     });
-
-
 </script>
-</html>
 
+</html>

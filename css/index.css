@@ -353,6 +353,15 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     border: 2px solid #FF2C7A;
     border-radius: 2px;
     position: relative;
+    text-align: right;
+}
+
+.today-quota .complete-progress .percentage{
+    line-height: 65px;
+    font-size:16px;
+    color:#FF2C7A;
+    position: relative;
+    left: 47px;
 }
 
 .today-quota .finish-progress {
@@ -368,13 +377,13 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     position: absolute;
     top: 0;
     z-index: 1;
-    width: 591px;
+    width: 100%;
     height: 61px;
-    padding-right: 53px;
-    box-sizing: border-box;
-    text-align: right;
+    /* padding-right: 53px;
+    box-sizing: border-box; */
+    text-align: center;
     line-height: 61px;
-    color: #fff;
+    color: #000;
     font-size: 20px;
 }
 
