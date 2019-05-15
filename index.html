@@ -252,11 +252,7 @@
         <div class="mask-top">
             <div class="tixing"></div>
             Investment Turing
-<<<<<<< HEAD
-            <img src="images/close.png" class="close-img" />
-=======
-            <img src="images/close.png" class="close-img" id="investors-mask-close"/>
->>>>>>> c7e2ef306214b76d214a70044733642b98a9d880
+            <img src="images/close.png" class="close-img" id="investors-mask-close" />
         </div>
         <div>
             <div class="col-sm-8 left-part">
@@ -285,7 +281,7 @@
         <div class="mask-top">
             <div class="tixing"></div>
             Application for supernode
-            <img src="images/close.png" class="close-img" id="application-mask-close"/>
+            <img src="images/close.png" class="close-img" id="application-mask-close" />
         </div>
         <div>
             <div class="col-sm-8 left-part">
@@ -295,15 +291,14 @@
             <div class="col-sm-4 right-part">
                 <div class="box">
                     <div class="title">
-                        OFFICIAL E 
-                        <span class="red">-</span> 
-                        MAIL
+                        OFFICIAL E
+                        <span class="red">-</span> MAIL
                     </div>
                     <div class="detail">Support one-key issua nce of license,and the adoption of a secure hosting</div>
                 </div>
                 <div class="box">
                     <div class="title">
-                        SECRETARY 
+                        SECRETARY
                         <span class="red">WECHAT</span>
                     </div>
                     <div class="detail">Support one-key issuance of license,</div>
@@ -317,32 +312,30 @@
 <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./js/new.js"></script>
 <script>
-    $(function(){
+    $(function() {
         // 导航条选中
         $('.navbar-right li').first().addClass("selected");
         var len = $('.navbar-right li').length;
-        $('.navbar-right li').click(function(){
-            if($(this).index() != len -1 &&  $(this).index() != len -2) {
+        $('.navbar-right li').click(function() {
+            if ($(this).index() != len - 1 && $(this).index() != len - 2) {
                 $(this).addClass('selected').siblings().removeClass('selected');
             }
         })
 
         // 显示、隐藏弹窗
         $("#investors").click(function() {
-            $("#investors-mask").css("display","block");
+            $("#investors-mask").css("display", "block");
         })
         $("#investors-mask-close").click(function() {
-            $("#investors-mask").css("display","none");
+            $("#investors-mask").css("display", "none");
         })
         $("#application").click(function() {
-            $("#application-mask").css("display","block");
+            $("#application-mask").css("display", "block");
         })
         $("#application-mask-close").click(function() {
-            $("#application-mask").css("display","none");
+            $("#application-mask").css("display", "none");
         })
     });
-
-
 </script>
-</html>
 
+</html>
