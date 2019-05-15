@@ -94,11 +94,46 @@
             </div>
         </div>
     </div>
+    <!--Application layer design for Web3.0-->
+    <div>
+        <div>Application layer design for Web3.0</div>
+        <div id="content4"></div>
+        <script id="test4" type="text/html">
+            {{each topData as value i}}
+            <div>
+                <img src="{{value.img}}" alt="">
+                <div>
+                    <div>{{value.title}}</div>
+                    <div>{{value.content}}</div>
+                </div>
+            </div>
+            {{/each}}
+        </script>
+    </div>
     <!---->
     <div>
         <div id="content3"></div>
         <script id="test3" type="text/html">
             {{each centerData as value i}}
+            <div>
+                <div>
+                    <img src="{{value.img}}" alt="">
+                </div>
+                <div>
+                    <div>{{value.title}}</div>
+                    <div>{{value.content}}</div>
+                </div>
+            </div>
+            {{/each}}
+        </script>
+    </div>
+    <!--Creative team-->
+    <div>
+        <div>Creative team</div>
+        <div>Under the hood, Cactus runs a small local web server for each website you're working on. This makes it possible to build your website locally, using modern web technologies, and have the results generated to a collection of flat files.</div>
+        <div id="content5"></div>
+        <script id="test5" type="text/html">
+            {{each bottomData as value i}}
             <div>
                 <div>
                     <img src="{{value.img}}" alt="">
@@ -148,7 +183,7 @@
                 </div>
             </div>
         </div>
-    </footer> 
+    </footer>
 </body>
 <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
 <script src="js/jquery/dist/jquery.min.js"></script>

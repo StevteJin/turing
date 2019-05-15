@@ -34,4 +34,27 @@ var data3 = {
 var html3 = template('test3', data3);
 document.getElementById('content3').innerHTML = html3;
 
+var top_icon = [
+    {class:'one-click',img:'./images/top-img1.png',title:'ONE-CLICK',content:'Supporting one-click issuance of passport,and using a secure hosting scheme...'},
+    {class:'management',img:'./images/top-img2.png',title:'management',content:'With the chain gover-nance model, all dec-isions are voted by the Turing coin ...'},
+    {class:'super-node ',img:'./images/top-img3.png',title:'Super Node ',content:"Node itself is applica-tion, business and Tu-ring's overall ecolo-gical prosperity"},
+    {class:'interoperability',img:'./images/top-img4.png',title:'Interoperability',content:'Self-organizing Busi-ness Alliance, Points Exchange,Equity Sharing'},
+    {class:'npos-consensus',img:'./images/top-img5.png',title:'NPOS Consensus',content:'Effective prevention of token centraliza-tion in POS block chain'},
+    {class:'cross-links',img:'./images/top-img6.png',title:'cross links',content:'Connecting Polkadot main network throu-gh bridge chain based on substrate'},
+]
+var data4 = {
+    topData: top_icon
+};
+var html4 = template('test4', data4);
+document.getElementById('content4').innerHTML = html4;
 
+var bottom_icon = [
+    {class:'n1',img:'./images/name.png',title:'name',content:'Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly'},
+    {class:'n2',img:'./images/name.png',title:'name',content:'Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly'},
+    {class:'n3 ',img:'./images/name.png',title:'name',content:"Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly"}
+]
+var data5 = {
+    bottomData:bottom_icon
+};
+var html5 = template('test5', data5);
+document.getElementById('content5').innerHTML = html5;
