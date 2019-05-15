@@ -249,11 +249,14 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     color: #fff;
 }
 
+
 /* block-chain-network */
+
 .block-chain-network {
     height: 298px;
     text-align: center;
 }
+
 .block-chain-network .second-title {
     font-weight: bold;
     color: #484A65;
@@ -263,16 +266,62 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 .block-chain-network .try-yourself {
     margin-top: 42px;
     color: #8B9CB7;
-    font-size:22px;
+    font-size: 22px;
 }
 
+
 /* today-quota */
+
 .today-quota {
     height: 502px;
     text-align: center;
 }
+
 .today-quota .third-title {
-    font-size:53px;
-    font-weight:bold;
-    color:#FF2C7A;
+    font-size: 53px;
+    font-weight: bold;
+    color: #FF2C7A;
 }
+
+
+/*Application layer design for Web3.0*/
+
+.web-second {
+    overflow: hidden;
+}
+
+.web-second .second-title {}
+
+.web-second #content3 {}
+
+.web-second #content3 .second-box {
+    background-color: #ffffff;
+    overflow: hidden;
+    margin-top: 90px;
+    height: 457px;
+}
+
+.web-second #content3 .second-box .col1 div {
+    border-right: 1px solid #EDEDED;
+    width: 270px;
+    height: 270px;
+    margin-top: 93.5px;
+}
+
+.web-second #content3 .second-box .col1 img {
+    width: 230px;
+    height: 230px;
+    margin-left: 24px;
+}
+
+.web-second #content3 .second-box .col2 {}
+
+.web-second #content3 .second-box .col2 .col-title {
+    color: #484A65;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 96px;
+    margin-bottom: 71px;
+}
+
+.web-second #content3 .second-box .col2 .col-content {}

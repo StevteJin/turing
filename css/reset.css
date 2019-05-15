@@ -135,5 +135,9 @@ ul {
     list-style: none;
 }
 
+body {
+    background-color: rgb(237, 237, 237);
+}
+
 
 /* == 以上 reset Css == */
