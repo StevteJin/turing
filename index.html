@@ -119,6 +119,25 @@
             {{/each}}
         </script>
     </div>
+    <!--Creative team-->
+    <div>
+        <div>Creative team</div>
+        <div>Under the hood, Cactus runs a small local web server for each website you're working on. This makes it possible to build your website locally, using modern web technologies, and have the results generated to a collection of flat files.</div>
+        <div id="content5"></div>
+        <script id="test5" type="text/html">
+            {{each bottomData as value i}}
+            <div>
+                <div>
+                    <img src="{{value.img}}" alt="">
+                </div>
+                <div>
+                    <div>{{value.title}}</div>
+                    <div>{{value.content}}</div>
+                </div>
+            </div>
+            {{/each}}
+        </script>
+    </div>
     <!--页脚-->
     <footer>
         <div class="content-box">

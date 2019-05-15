@@ -47,3 +47,14 @@ var data4 = {
 };
 var html4 = template('test4', data4);
 document.getElementById('content4').innerHTML = html4;
+
+var bottom_icon = [
+    {class:'n1',img:'./images/name.png',title:'name',content:'Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly'},
+    {class:'n2',img:'./images/name.png',title:'name',content:'Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly'},
+    {class:'n3 ',img:'./images/name.png',title:'name',content:"Support one-key issuance of license,and the adoption of a secure hosting solution, users use blockchain seamlessly"}
+]
+var data5 = {
+    bottomData:bottom_icon
+};
+var html5 = template('test5', data5);
+document.getElementById('content5').innerHTML = html5;
