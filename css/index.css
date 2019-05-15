@@ -38,10 +38,10 @@ footer {
 }
 
 footer .content-box {
-    width: 1200px;
+    width: 1500px;
     position: absolute;
     left: 50%;
-    margin-left: -600px;
+    margin-left: -750px;
 }
 
 footer .content-box .left-box {
@@ -95,11 +95,85 @@ footer .content-box .center-box #content {
 
 footer .content-box .center-box #content div {
     font-size: 14px;
+    height: 20px;
+    line-height: 20px;
     color: #ffffff;
     float: left;
     width: 189px;
     text-align: left;
     margin-bottom: 25px;
+}
+
+footer .content-box .right-box .top-box {}
+
+footer .content-box .right-box .top-box .top-name {
+    color: #ffffff;
+    font-size: 14px;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 96px;
+    margin-bottom: 29px;
+}
+
+footer .content-box .right-box .top-box #content1 {}
+
+footer .content-box .right-box .top-box #content1 img {
+    float: left;
+    margin-right: 24px;
+}
+
+footer .content-box .right-box .top-box #content1 img:last-child {
+    margin-right: 0px;
+}
+
+footer .content-box .right-box .top-box #content1 .facebook {
+    width: 11px;
+    height: 20px;
+}
+
+footer .content-box .right-box .top-box #content1 .bird {
+    width: 24px;
+    height: 20px;
+}
+
+footer .content-box .right-box .top-box #content1 .camera {
+    width: 20px;
+    height: 19px;
+}
+
+footer .content-box .right-box .top-box #content1 .player {
+    width: 28px;
+    height: 21px;
+}
+
+footer .content-box .right-box .top-box #content1 .m {
+    width: 22px;
+    height: 22px;
+}
+
+footer .content-box .right-box .bottom-box {}
+
+footer .content-box .right-box .bottom-box #content2 {
+    margin-top: 260px;
+}
+
+footer .content-box .right-box .bottom-box #content2 div {
+    float: left;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    width: 97px;
+    border-right: 1px solid #ffffff;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+footer .content-box .right-box .bottom-box #content2 div:first-child {
+    text-align: left;
+}
+
+footer .content-box .right-box .bottom-box #content2 div:last-child {
+    border-right: none;
 }
 
 .navbar-inverse .navbar-nav>li {
