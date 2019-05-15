@@ -86,6 +86,22 @@
             <div class="third-title">Today's quota</div>
         </div>
     </div>
+    <!--Application layer design for Web3.0-->
+    <div>
+        <div>Application layer design for Web3.0</div>
+        <div id="content4"></div>
+        <script id="test4" type="text/html">
+            {{each topData as value i}}
+            <div>
+                <img src="{{value.img}}" alt="">
+                <div>
+                    <div>{{value.title}}</div>
+                    <div>{{value.content}}</div>
+                </div>
+            </div>
+            {{/each}}
+        </script>
+    </div>
     <!---->
     <div>
         <div id="content3"></div>
@@ -140,7 +156,7 @@
                 </div>
             </div>
         </div>
-    </footer> 
+    </footer>
 </body>
 <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
 <script src="js/jquery/dist/jquery.min.js"></script>
