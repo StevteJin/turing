@@ -3,6 +3,15 @@
 	    width: 1200px;
 	}
 }
+.bg-img {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	height: 2706px;
+	background: url(../images/bg.png) 100% no-repeat;
+}
+
 .navbar-inverse {
 	height: 74px;
 	line-height: 74px;
@@ -11,6 +20,90 @@
     box-shadow:0px 7px 109px 0px rgba(4,0,0,0.1);
 }
 
+.navbar-brand {
+	height: 74px;
+    padding: 22px 15px;
+}
+
 .navbar-brand>img {
 	height: 30px;
 }
+
+.navbar-inverse .navbar-nav>li {
+	position: relative;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	font-weight: bold;
+    color: #333333;
+    font-size: 16px;
+    padding: 27px 20px;
+    position: relative;
+}
+
+.navbar-inverse .navbar-nav>li>.under-line {
+	position: absolute;
+	bottom: 26px;
+	width: 100%;
+	height: 2px;
+	padding: 0 35px;
+	box-sizing: border-box;
+}
+
+.navbar-inverse .navbar-nav>li>.under-line:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #FF2C7A;
+}
+
+.navbar-inverse ul.navbar-nav li a:hover {
+	color: #333333;
+}
+
+.transfer-img {
+	cursor: pointer;
+}
+
+/* turing-network */
+.turing-network {
+	width: 100%;
+	height: 1080px;
+	/*background: url(../images/bg1.png) 100% 100% no-repeat;*/
+	padding-top: 295px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.turing-network .title {
+	font-weight: bold;
+	color: #212529;
+	font-size: 126px;
+}
+
+.turing-network .discribe {
+	margin: 0 auto;
+	width: 678px;
+	color: #6D6A77;
+	font-size: 26px;
+}
+
+.turing-network .btn {
+	width: 420px;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	background: #FF2C7A;
+	border-radius: 2px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.small-little {
+	font-weight: bold;
+	color: #484A65;
+	font-size: 45px;
+}
+
+

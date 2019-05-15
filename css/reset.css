@@ -1,0 +1,139 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+input,
+select {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline: 0;
+    color: inherit;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*p {
+	line-height: 22px;
+	text-align: justify;
+}*/
+
+a img,
+iframe {
+    border: none;
+}
+
+
+/* a:link {
+	color: inherit;
+} */
+
+:focus {
+    outline: 0;
+}
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* height: 16px;  */
+}
+
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  */
+    border-radius: 5px;
+    background-color: #E5E5E5;
+}
+
+
+/*定义滑块 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  */
+    background-color: #898989;
+}
+
+
+/*img{ vertical-align:top;}*/
+
+ol,
+ul {
+    list-style: none;
+}
+
+
+/* == 以上 reset Css == */
