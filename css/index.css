@@ -420,6 +420,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 
 
 /* application-layer-design */
+
 .application-layer-design {
     margin-bottom: 90px;
 }
@@ -458,6 +459,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     font-size: 24px;
     color: #484A65;
     margin-bottom: 34px;
+    text-align: left;
 }
 
 .application-layer-design .design-detail {
@@ -471,6 +473,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+    text-align: left;
 }
 
 
