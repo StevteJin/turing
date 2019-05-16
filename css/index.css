@@ -301,7 +301,6 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 /*Application layer design for Web3.0*/
 
 .web-second {
-    padding-top: 90px;
     overflow: hidden;
 }
 
@@ -417,6 +416,9 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 
 
 /* application-layer-design */
+.application-layer-design {
+    margin-bottom: 90px;
+}
 
 .fourth-title {
     margin: 0 auto 130px;
