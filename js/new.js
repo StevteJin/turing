@@ -59,7 +59,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
                 class: 'management',
                 a: 'a22',
                 a1: 'a28',
-                img: './images/top-img2.png',
+                img: './images/top-img4.png',
                 title: $.i18n.prop('a22'),
                 content: $.i18n.prop('a28')
             },
@@ -75,7 +75,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
                 class: 'interoperability',
                 a: 'a24',
                 a1: 'a30',
-                img: './images/top-img4.png',
+                img: './images/top-img5.png',
                 title: $.i18n.prop('a24'),
                 content: $.i18n.prop('a30')
             },
@@ -83,7 +83,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
                 class: 'npos-consensus',
                 a: 'a25',
                 a1: 'a31',
-                img: './images/top-img5.png',
+                img: './images/top-img6.png',
                 title: $.i18n.prop('a25'),
                 content: $.i18n.prop('a31')
             },
@@ -91,7 +91,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
                 class: 'cross-links',
                 a: 'a26',
                 a1: 'a32',
-                img: './images/top-img6.png',
+                img: './images/top-img2.png',
                 title: $.i18n.prop('a26'),
                 content: $.i18n.prop('a32')
             }
@@ -100,7 +100,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
                 class: 'c1',
                 a: 'a33',
                 a1: 'a41',
-                img: './images/img1.png',
+                img: './images/img8.png',
                 title: $.i18n.prop('a33'),
                 content: $.i18n.prop('a41')
             },
@@ -108,7 +108,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
                 class: 'c2',
                 a: 'a34',
                 a1: 'a42',
-                img: './images/img2.png',
+                img: './images/img7.png',
                 title: $.i18n.prop('a34'),
                 content: $.i18n.prop('a42')
             },
@@ -116,7 +116,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
                 class: 'c3',
                 a: 'a35',
                 a1: 'a43',
-                img: './images/img3.png',
+                img: './images/img5.png',
                 title: $.i18n.prop('a35'),
                 content: $.i18n.prop('a43')
             },
@@ -124,7 +124,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
                 class: 'c4',
                 a: 'a36',
                 a1: 'a44',
-                img: './images/img4.png',
+                img: './images/img2.png',
                 title: $.i18n.prop('a36'),
                 content: $.i18n.prop('a44')
             },
@@ -140,7 +140,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
                 class: 'c6',
                 a: 'a38',
                 a1: 'a46',
-                img: './images/img6.png',
+                img: './images/img1.png',
                 title: $.i18n.prop('a38'),
                 content: $.i18n.prop('a46')
             },
@@ -156,14 +156,14 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
                 class: 'c8',
                 a: 'a40',
                 a1: 'a48',
-                img: './images/img8.png',
+                img: './images/img4.png',
                 title: $.i18n.prop('a40'),
                 content: $.i18n.prop('a48')
             }
         ];
         hua_data = [{
                 class: 'hua1',
-                date: '2018/10/1',
+                date: '2018/10',
                 a: 'a49',
                 a1: 'a56',
                 title: $.i18n.prop('a49'),
@@ -171,7 +171,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
             },
             {
                 class: 'hua2',
-                date: '2018/10/2',
+                date: '2019/8',
                 a: 'a50',
                 a1: 'a57',
                 title: $.i18n.prop('a50'),
@@ -179,7 +179,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
             },
             {
                 class: 'hua3',
-                date: '2018/5/9',
+                date: '2019/10',
                 a: 'a51',
                 a1: 'a58',
                 title: $.i18n.prop('a51'),
@@ -187,7 +187,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
             },
             {
                 class: 'hua4',
-                date: '2019/5/9',
+                date: '2019/12',
                 a: 'a52',
                 a1: 'a59',
                 title: $.i18n.prop('a52'),
@@ -195,7 +195,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
             },
             {
                 class: 'hua5',
-                date: '2019/5/9',
+                date: '2020/3',
                 a: 'a53',
                 a1: 'a60',
                 title: $.i18n.prop('a53'),
@@ -203,7 +203,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
             },
             {
                 class: 'hua6',
-                date: '2019/5/9',
+                date: '2020/5',
                 a: 'a54',
                 a1: 'a61',
                 title: $.i18n.prop('a54'),
@@ -211,7 +211,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
             },
             {
                 class: 'hua7',
-                date: '2019/5/9',
+                date: '2020/6',
                 a: 'a55',
                 a1: 'a62',
                 title: $.i18n.prop('a55'),
