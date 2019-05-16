@@ -420,7 +420,6 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 
 .fourth-title {
     margin: 0 auto 130px;
-    width: 500px;
     text-align: center;
     font-weight: bold;
     font-size: 24px;
@@ -428,14 +427,15 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     position: relative;
 }
 .fourth-title .text-before {
-    float: left;
+    display: inline-block;
     border-bottom: 2px solid #FF2C7A;
     color: #FF2C7A;
 }
 
 .fourth-title .text-after {
-    float: left;
+    display: inline-block;
     border-bottom: 2px solid #484A65;
+    margin-left: -7px;
 }
 
 .application-layer-design .design-item {
