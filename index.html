@@ -22,7 +22,8 @@
         <nav class="navbar navbar-inverse navbar-no-bg navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#top-navbar-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -90,7 +91,8 @@
             <div class="third-title a15">Today's quota</div>
             <div class="complete-progress">
                 <div class="finish-progress"></div>
-                <div class="finish-count"><span class="a16">Has been robbed</span> <span class="num">10,000,0</span></div>
+                <div class="finish-count"><span class="a16">Has been robbed</span> <span class="num">10,000,0</span>
+                </div>
                 <div class="percentage">70%</div>
             </div>
             <div class="inner-box">
@@ -98,235 +100,239 @@
                 <div class="super-node-application a18" id="application">Super Node Application</div>
             </div>
         </div>
-        <!--Application layer design for Web3.0-->
-        <div class="application-layer-design do-jump">
-            <div class="container">
-                <div class="fourth-title">
-                    <span class="text-before">
-                        <span class="a19">APPLICATION</span>
-                    </span>
-                    <span class="text-after">
-                        &nbsp;<span class="a20">LAYER DESIGN FOR WEB3.0</span>
-                    </span>
-                </div>
-                <div class="row">
-                    <div id="content4"></div>
-                </div>
-                <script id="test4" type="text/html">
-                    {{each topData as value i}}
-                    <div class="col-sm-12 col-md-6 col-lg-4 design-item">
-                        <div class="media design-media">
-                            <div class="media-left media-middle design-left">
-                                <a href="#">
-                                    <img class="media-object" src="{{value.img}}" alt="...">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading design-title {{value.a}}">{{value.title}}</h4>
-                                <div class="design-detail {{value.a1}}">{{value.content}}</div>
-                            </div>
+    </div>
+    <!--Application layer design for Web3.0-->
+    <div class="application-layer-design do-jump">
+        <div class="container">
+            <div class="fourth-title">
+                <span class="text-before">
+                    <span class="a19">APPLICATION</span>
+                </span>
+                <span class="text-after">
+                    &nbsp;<span class="a20">LAYER DESIGN FOR WEB3.0</span>
+                </span>
+            </div>
+            <div class="row">
+                <div id="content4"></div>
+            </div>
+            <script id="test4" type="text/html">
+                {{each topData as value i}}
+                <div class="col-sm-12 col-md-6 col-lg-4 design-item">
+                    <div class="media design-media">
+                        <div class="media-left media-middle design-left">
+                            <a href="#">
+                                <img class="media-object" src="{{value.img}}" alt="...">
+                            </a>
                         </div>
+                        <div class="media-body">
+                            <h4 class="media-heading design-title {{value.a}}">{{value.title}}</h4>
+                            <div class="design-detail {{value.a1}}">{{value.content}}</div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+    </div>
+    <!--APPLICATION LAYER DESIGN FOR WEB3.0 second-->
+    <div class="web-second do-jump">
+        <div class="container">
+            <div class="fourth-title">
+                <span class="text-before">
+                    <span class="a19">APPLICATION</span>
+                </span>
+                <span class="text-after">
+                    &nbsp;<span class="a20">LAYER DESIGN FOR WEB3.0</span>
+                </span>
+            </div>
+            <div class="row">
+                <div id="content3"></div>
+            </div>
+            <script id="test3" type="text/html">
+                {{each centerData as value i}}
+                <div class="second-box">
+                    <!--基数为12-->
+                    <div class="col-sm-3 col1">
+                        <div>
+                            <img src="{{value.img}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col2">
+                        <div class="col-title {{value.a}}">{{value.title}}</div>
+                        <div class="col-content {{value.a1}}">{{value.content}}</div>
+                    </div>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+    </div>
+
+    <!--这里就是左右滑动的那个滑动条 start-->
+    <link rel="stylesheet" href="./css/jackwei.slider.css">
+    <script src="./js/jackwei.slider.js"></script>
+    <div class="hua-box do-jump">
+        <div class="hua-width">
+            <!--空盒子-->
+            <div class="empty-box container"></div>
+            <div class="big-hua-box">
+                <div id="content6"></div>
+                <script id="test6" type="text/html">
+                    {{each huaData as value i}}
+                    <div class="huahua">
+                        <div class='{{value.class}} color'></div>
+                        <div class="hua-date">{{value.date}}</div>
+                        <div class="hua-title {{value.a}}">{{value.title}}</div>
+                        <div class="hua-content {{value.a1}}">{{value.content}}</div>
                     </div>
                     {{/each}}
                 </script>
             </div>
-
+            <div id="sliderParent"></div>
         </div>
-        <!--APPLICATION LAYER DESIGN FOR WEB3.0 second-->
-        <div class="web-second do-jump">
-            <div class="container">
-                <div class="fourth-title">
-                    <span class="text-before">
-                        <span class="a19">APPLICATION</span>
-                    </span>
-                    <span class="text-after">
-                        &nbsp;<span class="a20">LAYER DESIGN FOR WEB3.0</span>
-                    </span>
-                </div>
-                <div class="row">
-                    <div id="content3"></div>
-                </div>
-                <script id="test3" type="text/html">
-                    {{each centerData as value i}}
-                    <div class="second-box">
-                        <!--基数为12-->
-                        <div class="col-sm-3 col1">
-                            <div>
-                                <img src="{{value.img}}" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-7 col2">
-                            <div class="col-title {{value.a}}">{{value.title}}</div>
-                            <div class="col-content {{value.a1}}">{{value.content}}</div>
-                        </div>
+    </div>
+    <script src="./js/huadong.js"></script>
+
+    <!--这里就是左右滑动的那个滑动条 end-->
+    <!--Creative team-->
+    <div class="creative-team do-jump">
+        <div class="container">
+            <div class="fifth-title a63">Creative team</div>
+            <div class="describe a64">Under the hood, Cactus runs a small local web server for each website you're
+                working on. </div>
+            <div class="describe a65">This makes it possible to</div>
+            <div class="describe a66">build your website locally, using modern web technologies,</div>
+            <div class="describe a67">and have the results generated to a collection of flat files.</div>
+            <div class="row">
+                <div id="content5"></div>
+            </div>
+            <script id="test5" type="text/html">
+                {{each bottomData as value i}}
+                <div class="col-sm-6 col-lg-4 creative-team-item">
+                    <div class="creative-team-img">
+                        <img class="img-responsive" src="{{value.img}}" alt="">
                     </div>
+                    <div>
+                        <div class="creative-team-name {{value.a}}">{{value.title}}</div>
+                        <div class="creative-team-detail {{value.a1}}">{{value.content}}</div>
+                    </div>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+    </div>
+    <!--页脚-->
+    <footer>
+        <div class="content-box container">
+            <div class="left-box">
+                <div class="logo-box">
+                    <img src="./images/footer_icon.png" alt="">
+                    <img src="./images/footer_name.png" alt="">
+                </div>
+                <div class="text">Turing reserves the right of final interpretation</div>
+            </div>
+            <div class="center-box">
+                <div id="content"></div>
+                <script id="test" type="text/html">
+                    {{each sponsorsData as value i}}
+                    <div>{{value}}</div>
                     {{/each}}
                 </script>
             </div>
-        </div>
-
-        <!--这里就是左右滑动的那个滑动条 start-->
-        <link rel="stylesheet" href="./css/jackwei.slider.css">
-        <script src="./js/jackwei.slider.js"></script>
-        <div class="hua-box do-jump">
-            <div class="hua-width">
-                <!--空盒子-->
-                <div class="empty-box container"></div>
-                <div class="big-hua-box">
-                    <div id="content6"></div>
-                    <script id="test6" type="text/html">
-                        {{each huaData as value i}}
-                        <div class="huahua">
-                            <div class='{{value.class}} color'></div>
-                            <div class="hua-date">{{value.date}}</div>
-                            <div class="hua-title {{value.a}}">{{value.title}}</div>
-                            <div class="hua-content {{value.a1}}">{{value.content}}</div>
-                        </div>
-                        {{/each}}
+            <div class="right-box">
+                <div class="top-box">
+                    <div class="top-name">EPSIo</div>
+                    <div id="content1"></div>
+                    <script id="test1" type="text/html">
+                        {{each iconData as value i}}
+                        <img class='{{value.class}}' src="{{value.src}}" alt=""> {{/each}}
                     </script>
                 </div>
-                <div id="sliderParent"></div>
-            </div>
-        </div>
-        <script src="./js/huadong.js"></script>
-
-        <!--这里就是左右滑动的那个滑动条 end-->
-        <!--Creative team-->
-        <div class="creative-team do-jump">
-            <div class="container">
-                <div class="fifth-title a63">Creative team</div>
-                <div class="describe a64">Under the hood, Cactus runs a small local web server for each website you're working on. </div>
-                <div class="describe a65">This makes it possible to</div>
-                <div class="describe a66">build your website locally, using modern web technologies,</div>
-                <div class="describe a67">and have the results generated to a collection of flat files.</div>
-                <div class="row">
-                    <div id="content5"></div>
-                </div>
-                <script id="test5" type="text/html">
-                    {{each bottomData as value i}}
-                    <div class="col-sm-6 col-lg-4 creative-team-item">
-                        <div class="creative-team-img">
-                            <img class="img-responsive" src="{{value.img}}" alt="">
-                        </div>
-                        <div>
-                            <div class="creative-team-name {{value.a}}">{{value.title}}</div>
-                            <div class="creative-team-detail {{value.a1}}">{{value.content}}</div>
-                        </div>
-                    </div>
-                    {{/each}}
-                </script>
-            </div>
-        </div>
-        <!--页脚-->
-        <footer>
-            <div class="content-box">
-                <div class="left-box">
-                    <div class="logo-box">
-                        <img src="./images/footer_icon.png" alt="">
-                        <img src="./images/footer_name.png" alt="">
-                    </div>
-                    <div class="text">Turing reserves the right of final interpretation</div>
-                </div>
-                <div class="center-box">
-                    <div id="content"></div>
-                    <script id="test" type="text/html">
-                        {{each sponsorsData as value i}}
+                <div class="bottom-box">
+                    <div id="content2"></div>
+                    <script id="test2" type="text/html">
+                        {{each nameData as value i}}
                         <div>{{value}}</div>
                         {{/each}}
                     </script>
                 </div>
-                <div class="right-box">
-                    <div class="top-box">
-                        <div class="top-name">EPSIo</div>
-                        <div id="content1"></div>
-                        <script id="test1" type="text/html">
-                            {{each iconData as value i}}
-                            <img class='{{value.class}}' src="{{value.src}}" alt=""> {{/each}}
-                        </script>
+            </div>
+        </div>
+    </footer>
+    <!-- 弹窗 -->
+    <div class="mask" id="investors-mask">
+        <div class="mask-top">
+            <div class="tixing"></div>
+            Investment Turing
+            <img src="images/close.png" class="close-img" id="investors-mask-close" />
+        </div>
+        <div>
+            <div class="col-sm-8 left-part">
+                <img src="images/er_wei_ma.png" style="margin-top: 27px;" />
+            </div>
+            <div class="col-sm-4 right-part">
+                <div class="box">
+                    <div class="title">
+                        OFFICIAL E
+                        <span class="red">-</span> MAIL
                     </div>
-                    <div class="bottom-box">
-                        <div id="content2"></div>
-                        <script id="test2" type="text/html">
-                            {{each nameData as value i}}
-                            <div>{{value}}</div>
-                            {{/each}}
-                        </script>
+                    <div class="detail">Support one-key issua nce of license,and the adoption of a secure hosting
                     </div>
                 </div>
-            </div>
-        </footer>
-        <!-- 弹窗 -->
-        <div class="mask" id="investors-mask">
-            <div class="mask-top">
-                <div class="tixing"></div>
-                Investment Turing
-                <img src="images/close.png" class="close-img" id="investors-mask-close" />
-            </div>
-            <div>
-                <div class="col-sm-8 left-part">
-                    <img src="images/er_wei_ma.png" style="margin-top: 27px;" />
-                </div>
-                <div class="col-sm-4 right-part">
-                    <div class="box">
-                        <div class="title">
-                            OFFICIAL E
-                            <span class="red">-</span> MAIL
-                        </div>
-                        <div class="detail">Support one-key issua nce of license,and the adoption of a secure hosting</div>
+                <div class="box">
+                    <div class="title">
+                        SECRETARY
+                        <span class="red">WECHAT</span>
                     </div>
-                    <div class="box">
-                        <div class="title">
-                            SECRETARY
-                            <span class="red">WECHAT</span>
-                        </div>
-                        <div class="detail">Support one-key issuance of license,</div>
-                        <div class="dividing-line-second"></div>
-                    </div>
+                    <div class="detail">Support one-key issuance of license,</div>
+                    <div class="dividing-line-second"></div>
                 </div>
             </div>
         </div>
-        <div class="mask" id="application-mask">
-            <div class="mask-top">
-                <div class="tixing"></div>
-                Application for supernode
-                <img src="images/close.png" class="close-img" id="application-mask-close" />
+    </div>
+    <div class="mask" id="application-mask">
+        <div class="mask-top">
+            <div class="tixing"></div>
+            Application for supernode
+            <img src="images/close.png" class="close-img" id="application-mask-close" />
+        </div>
+        <div>
+            <div class="col-sm-8 left-part">
+                <img src="images/application1.png" />
+                <div class="left-text">Polkadot stakeholders have control over thewhich on other platforms are
+                    exclusive to minerwill be given to the</div>
             </div>
-            <div>
-                <div class="col-sm-8 left-part">
-                    <img src="images/application1.png" />
-                    <div class="left-text">Polkadot stakeholders have control over thewhich on other platforms are exclusive to minerwill be given to the</div>
+            <div class="col-sm-4 right-part">
+                <div class="box">
+                    <div class="title">
+                        OFFICIAL E
+                        <span class="red">-</span> MAIL
+                    </div>
+                    <div class="detail">Support one-key issua nce of license,and the adoption of a secure hosting
+                    </div>
                 </div>
-                <div class="col-sm-4 right-part">
-                    <div class="box">
-                        <div class="title">
-                            OFFICIAL E
-                            <span class="red">-</span> MAIL
-                        </div>
-                        <div class="detail">Support one-key issua nce of license,and the adoption of a secure hosting</div>
+                <div class="box">
+                    <div class="title">
+                        SECRETARY
+                        <span class="red">WECHAT</span>
                     </div>
-                    <div class="box">
-                        <div class="title">
-                            SECRETARY
-                            <span class="red">WECHAT</span>
-                        </div>
-                        <div class="detail">Support one-key issuance of license,</div>
-                        <div class="dividing-line-second"></div>
-                    </div>
+                    <div class="detail">Support one-key issuance of license,</div>
+                    <div class="dividing-line-second"></div>
                 </div>
             </div>
         </div>
+    </div>
 </body>
 <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
 <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./js/new.js"></script>
 <script>
-    $(function() {
+    $(function () {
         // 导航条选中
         $('.navbar-right li').first().addClass("selected");
         var len = $('.navbar-right li').length;
-        $('.navbar-right li').click(function() {
+        $('.navbar-right li').click(function () {
             if ($(this).index() != len - 1 && $(this).index() != len - 2) {
-                $(this).addClass('selected').siblings().removeClass('selected');
+                // $(this).addClass('selected').siblings().removeClass('selected');
                 //导航平滑滚动
                 jump($(this).index());
             }
@@ -337,20 +343,32 @@
                 'scrollTop': $('.do-jump').eq(index).offset().top - 74
             }, 500)
         }
+        // $(window).scroll(function () {
+        //     var scrollTop = $(this).scrollTop();
+        //     for (var i = $('.do-jump').length - 1; i > 0; i--) {
+        //         var node = $('.do-jump').eq(i);
+        //         if (scrollTop > node.offset().top - 74 && scrollTop < node.offset().top + node
+        //         .height()) {
+        //             console.log('top>>', node.offset().top)
+        //             console.log('height>>', node.height())
+        //             $('.navbar-right li').eq(i).addClass('selected').siblings().removeClass('selected');
+        //         }
+        //     }
+        // });
         // 显示、隐藏弹窗
-        $("#investors").click(function() {
+        $("#investors").click(function () {
             $("body").css("overflow", "hidden");
             $("#investors-mask").css("display", "block");
         })
-        $("#investors-mask-close").click(function() {
+        $("#investors-mask-close").click(function () {
             $("body").css("overflow", "auto");
             $("#investors-mask").css("display", "none");
         })
-        $("#application").click(function() {
+        $("#application").click(function () {
             $("body").css("overflow", "hidden");
             $("#application-mask").css("display", "block");
         })
-        $("#application-mask-close").click(function() {
+        $("#application-mask-close").click(function () {
             $("body").css("overflow", "auto");
             $("#application-mask").css("display", "none");
         })
