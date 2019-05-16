@@ -38,10 +38,10 @@ footer {
 }
 
 footer .content-box {
-    width: 1500px;
+    /* width: 1500px; 
     position: absolute;
     left: 50%;
-    margin-left: -750px;
+    margin-left: -750px; */
 }
 
 footer .content-box .left-box {
@@ -85,12 +85,13 @@ footer .content-box .left-box .text {
 
 footer .content-box .center-box {
     margin-top: 96px;
-    margin-left: 290px;
+    margin-left: 90px;
 }
 
 footer .content-box .center-box #content {
-    width: 567px;
+    width: 522px;
     height: 167px;
+    overflow: hidden;
 }
 
 footer .content-box .center-box #content div {
@@ -99,7 +100,7 @@ footer .content-box .center-box #content div {
     line-height: 20px;
     color: #ffffff;
     float: left;
-    width: 189px;
+    width: 174px;
     text-align: left;
     margin-bottom: 25px;
 }
