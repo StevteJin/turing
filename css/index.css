@@ -347,6 +347,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 .web-second #content3 .second-box .col2 .col-content {
     line-height: 26px;
     font-size: 14px;
+    text-align: left;
 }
 
 .today-quota .complete-progress {
