@@ -225,7 +225,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 .turing-network {
     width: 100%;
     /* height: 932px; */
-    padding-top: 295px;
+    padding-top: 195px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -233,7 +233,8 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 .turing-network .title {
     font-weight: bold;
     color: #212529;
-    font-size: 126px;
+    font-size: 100px;
+    /* letter-spacing: 6px */
 }
 
 .turing-network .discribe {
@@ -241,6 +242,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     width: 678px;
     color: #6D6A77;
     font-size: 26px;
+    /* letter-spacing: 4px */
 }
 
 .turing-network .discribe1 {
@@ -301,6 +303,11 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     font-size: 53px;
     font-weight: bold;
     color: #FF2C7A;
+}
+
+.img100 {
+    width: 100px;
+    height: 100px;
 }
 
 
@@ -541,7 +548,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 .mask {
     display: none;
     width: 1200px;
-    height: 689px;
+    height: 450px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 2px;
     position: fixed;
@@ -559,7 +566,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     color: #fff;
     font-size: 14px;
     position: relative;
-    margin-bottom: 141px;
+    margin-bottom: 41px;
 }
 
 .tixing {
@@ -597,6 +604,11 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 .mask .right-part {
     color: #fff;
     font-size: 14px;
+    margin-top: -15px;
+}
+
+.mask .right-part .a78 {
+    margin-top: 30px;
 }
 
 .mask .right-part .box {
@@ -609,7 +621,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 }
 
 .mask .right-part .box:nth-child(2) {
-    padding-top: 49px;
+    padding-top: 10px;
     padding-bottom: 78px;
 }
 
@@ -624,6 +636,6 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 }
 
 .mask .right-part .detail {
-    width: 254px;
+    width: 330px;
     line-height: 26px;
 }

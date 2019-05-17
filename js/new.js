@@ -124,7 +124,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
                 class: 'c4',
                 a: 'a36',
                 a1: 'a44',
-                img: './images/img2.png',
+                img: './images/img3.png',
                 title: $.i18n.prop('a36'),
                 content: $.i18n.prop('a44')
             },
@@ -132,7 +132,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
                 class: 'c5',
                 a: 'a37',
                 a1: 'a45',
-                img: './images/img5.png',
+                img: './images/img2.png',
                 title: $.i18n.prop('a37'),
                 content: $.i18n.prop('a45')
             },
@@ -140,7 +140,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
                 class: 'c6',
                 a: 'a38',
                 a1: 'a46',
-                img: './images/img1.png',
+                img: './images/img6.png',
                 title: $.i18n.prop('a38'),
                 content: $.i18n.prop('a46')
             },
@@ -148,7 +148,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
                 class: 'c7',
                 a: 'a39',
                 a1: 'a47',
-                img: './images/img7.png',
+                img: './images/img1.png',
                 title: $.i18n.prop('a39'),
                 content: $.i18n.prop('a47')
             },

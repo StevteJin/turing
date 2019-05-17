@@ -87,13 +87,13 @@
     <!-- Today's quota -->
     <div class="today-quota">
         <div class="container">
-            <div class="third-title a15">今日额度</div>
-            <div class="complete-progress">
+            <!-- <div class="third-title a15">今日额度</div> -->
+            <!-- <div class="complete-progress">
                 <div class="finish-progress"></div>
                 <div class="finish-count"><span class="a16">已抢</span> <span class="num">10,000,0</span>
                 </div>
                 <div class="percentage">70%</div>
-            </div>
+            </div> -->
             <div class="inner-box">
                 <div class="investors a17" id="investors">投资者</div>
                 <div class="super-node-application a18" id="application">超级节点申请</div>
@@ -119,8 +119,8 @@
                 <div class="col-sm-12 col-md-6 col-lg-4 design-item">
                     <div class="media design-media">
                         <div class="media-left media-middle design-left">
-                            <a href="#">
-                                <img class="media-object" src="{{value.img}}" alt="...">
+                            <a>
+                                <img class="media-object img100" src="{{value.img}}" alt="...">
                             </a>
                         </div>
                         <div class="media-body">
@@ -260,7 +260,7 @@
     <div class="mask" id="investors-mask">
         <div class="mask-top">
             <div class="tixing"></div>
-            Investment Turing
+
             <img src="images/close.png" class="close-img" id="investors-mask-close" />
         </div>
         <div>
@@ -269,19 +269,15 @@
             </div>
             <div class="col-sm-4 right-part">
                 <div class="box">
-                    <div class="title">
-                        OFFICIAL E
-                        <span class="red">-</span> MAIL
-                    </div>
-                    <div class="detail">Support one-key issua nce of license,and the adoption of a secure hosting
+                    <div class="title a78">
+                        投资图灵公链
                     </div>
                 </div>
                 <div class="box">
-                    <div class="title">
-                        SECRETARY
-                        <span class="red">WECHAT</span>
+                    <div class="title a76">
+                        官方邮箱：bussiness@tur.network
                     </div>
-                    <div class="detail">Support one-key issuance of license,</div>
+                    <div class="title a77">官方小秘书微信：Turnetwork</div>
                     <div class="dividing-line-second"></div>
                 </div>
             </div>
@@ -290,29 +286,28 @@
     <div class="mask" id="application-mask">
         <div class="mask-top">
             <div class="tixing"></div>
-            Application for supernode
+
             <img src="images/close.png" class="close-img" id="application-mask-close" />
         </div>
         <div>
             <div class="col-sm-8 left-part">
                 <img src="images/application1.png" />
-                <div class="left-text">Polkadot stakeholders have control over thewhich on other platforms are exclusive to minerwill be given to the</div>
+                <div class="left-text"></div>
             </div>
             <div class="col-sm-4 right-part">
                 <div class="box">
-                    <div class="title">
-                        OFFICIAL E
-                        <span class="red">-</span> MAIL
+                    <div class="title a74">
+                        申请成为超级节点
                     </div>
-                    <div class="detail">Support one-key issua nce of license,and the adoption of a secure hosting
+                    <div class="detail a75">基于Polkadot的应用层分布式网络。采用链上治理模型，所有决议都由图灵币社区投票通过，链上代码执行，不会产生任何歧义。
                     </div>
                 </div>
+
                 <div class="box">
-                    <div class="title">
-                        SECRETARY
-                        <span class="red">WECHAT</span>
+                    <div class="title a76">
+                        官方邮箱：bussiness@tur.network
                     </div>
-                    <div class="detail">Support one-key issuance of license,</div>
+                    <div class="title a77">官方小秘书微信：Turnetwork</div>
                     <div class="dividing-line-second"></div>
                 </div>
             </div>
@@ -324,8 +319,12 @@
 <script src="./js/new.js"></script>
 <script>
     $(function() {
-        $(window).scrollTop(0);
-        // 导航条选中
+        window.onload = function() {
+                setTimeout(function() {
+                    $(window).scrollTop(0)
+                }, 10);
+            }
+            // 导航条选中
         var len = $('.navbar-right .topNav').length;
         $('.navbar-right .topNav').click(function() {
             $(this).addClass('selected').siblings().removeClass('selected');
@@ -341,6 +340,11 @@
         })
         $('.navbar-right .topNav4').on('click', function() {
             jump('#content3 .second-box', 1);
+        })
+        $('.turing-network-btn').on('click', function() {
+            $('html,body').animate({
+                'scrollTop': $('.application-layer-design').offset().top - 74
+            }, 500)
         })
 
         function jump(className, index) {

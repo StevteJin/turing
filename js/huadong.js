@@ -35,7 +35,7 @@ $(function () {
             mode: 'map', //用Map的方式使用资源文件中的值
             language: language,
             callback: function () {//加载成功后设置显示内容
-                for(var i=1;i<80;i++){
+                for(var i=1;i<90;i++){
                     $('.a'+i).html($.i18n.prop('a'+i))
                 }   
             }
