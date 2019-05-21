@@ -215,6 +215,10 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     color: #333333;
 }
 
+.navbar-inverse ul.navbar-nav li a:focus {
+    color: #333333!important;
+}
+
 .transfer-img {
     cursor: pointer;
 }
