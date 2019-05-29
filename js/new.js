@@ -220,7 +220,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
         ];
         bottom_icon = [{
                 class: 'n1',
-                img: './images/name.png',
+                img: './images/name.jpg',
                 a:'a68',
                 a1:'a71',
                 title: $.i18n.prop('a68'),
@@ -228,7 +228,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
             },
             {
                 class: 'n2',
-                img: './images/name.png',
+                img: './images/name.jpg',
                 a:'a68',
                 a1:'a71',
                 title: $.i18n.prop('a69'),
@@ -236,7 +236,7 @@ jQuery.i18n.properties({ //加载资浏览器语言对应的资源文件
             },
             {
                 class: 'n3 ',
-                img: './images/name.png',
+                img: './images/name.jpg',
                 a:'a68',
                 a1:'a71',
                 title: $.i18n.prop('a70'),

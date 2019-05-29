@@ -862,6 +862,56 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         line-height: 1.5;
         width: 1.88rem;
     }
+    .creative-team-mobile {
+        background: transparent;
+        text-align: left;
+    }
+    .creative-team-mobile .container {
+        padding-left: 0.26rem;
+    }
+    .creative-team-mobile .fifth-title {
+        font-size: 0.23rem;
+        margin-bottom: 0.1rem;
+    }
+    .creative-team-mobile .describe {
+        font-size: 0.11rem;
+    }
+    .creative-team-mobile .creative-team-item {
+        overflow: hidden;
+        margin-top: 0;
+        margin-bottom: 0.1rem;
+        padding: 0 0.15rem;
+    }
+    .creative-team-mobile .creative-team-item:nth-of-type(1) {
+        margin-top: 0.25rem;
+    }
+    .creative-team-mobile .creative-team-img {
+        float: left;
+        width: 1.8rem;
+        height: 1.35rem;
+        margin-bottom: 0;
+    }
+    .creative-team-mobile .creative-team-img .img-responsive {
+        height: 100%;
+    }
+    .creative-team-mobile .creative-team--right {
+        float: left;
+        margin-left: 0.25rem;
+        width: 1.2rem;
+    }
+    .creative-team-mobile .creative-team-name {
+        font-size: 0.2rem;
+        line-height: 0.35rem;
+        text-indent: 0;
+    }
+    .creative-team-mobile .creative-team-detail {
+        width: 1.15rem;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 0.1rem;
+        line-height: 1.5;
+        -webkit-line-clamp: 5;
+    }
     .hua-box {
         display: none;
     }
