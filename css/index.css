@@ -707,7 +707,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         margin-right: 0.15rem;
     }
     .turing-network-mobile {
-        padding-top: 0;
+        padding-top: 1.2rem;
     }
     .turing-network-mobile .title {
         font-size: 0.3rem;
@@ -868,6 +868,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     .creative-team-mobile {
         background: transparent;
         text-align: left;
+        padding-bottom: 0.23rem;
     }
     .creative-team-mobile .container {
         padding-left: 0.26rem;
