@@ -907,6 +907,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         font-size: 0.2rem;
         line-height: 0.35rem;
         text-indent: 0;
+        margin-bottom: 0.05rem;
     }
     .creative-team-mobile .creative-team-detail {
         width: 1.15rem;
