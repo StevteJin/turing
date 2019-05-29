@@ -80,4 +80,20 @@ $(function () {
         }
         loadProperties(witchLanguage);
     })
+    //这里移动端页脚
+    let mobileArr1=['about us','roadmap','team','partners','interest','careers'];
+    for(var i=0;i<mobileArr1.length;i++){
+        mobileArr1[i]= mobileArr1[i].toUpperCase();
+        $(".mobile-footer-box1").append('<div>'+mobileArr1[i]+'</div>');
+    }
+    let mobileArr2=['Twitter','blog','telegram','reddit','youtube'];
+    for(var i=0;i<mobileArr2.length;i++){
+        mobileArr2[i]= mobileArr2[i].toUpperCase();
+        $(".mobile-footer-box2").append('<div>'+mobileArr2[i]+'</div>');
+    }
+    let mobileArr3=['RESOURCES','GitHub','Whitepaper','faQ'];
+    for(var i=0;i<mobileArr3.length;i++){
+        mobileArr3[i]= mobileArr3[i].toUpperCase();
+        $(".mobile-footer-box3").append('<div>'+mobileArr3[i]+'</div>');
+    }
 })

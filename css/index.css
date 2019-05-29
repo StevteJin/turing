@@ -732,7 +732,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         font-size: 0.1rem;
         margin-bottom: 0.6rem;
     }
-    .block-chain-network-mobile{
+    .block-chain-network-mobile {
         margin-bottom: 0.97rem;
     }
     .block-chain-network-mobile .second-title {
@@ -929,6 +929,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     }
     footer {
         margin-top: 0px;
+        display: none;
     }
     .mobile-history-showbox {
         width: 2.3rem;
@@ -995,6 +996,59 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         display: inline-block;
         overflow: hidden;
     }
+    .mobile-footer {
+        width: 3.75rem;
+        height: 5.15rem;
+        background-color: #525562;
+        overflow: hidden;
+    }
+    .mobile-footer .mobile-bottom-logo {
+        width: 2.64rem;
+        height: 0.51rem;
+        margin: 0 auto;
+        margin-top: 0.52rem;
+        display: block;
+    }
+    .mobile-footer-box {
+        overflow: hidden;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 0.12rem;
+        margin-top: 0.53rem;
+    }
+    .mobile-footer-box1 {
+        width: 0.7rem;
+        overflow: hidden;
+        float: left;
+        margin-left: 0.59rem;
+    }
+    .mobile-footer-box1 div {
+        margin-bottom: 0.14rem;
+    }
+    .mobile-footer-box2 {
+        width: 0.7rem;
+        overflow: hidden;
+        float: left;
+        margin-left: 0.2rem;
+    }
+    .mobile-footer-box2 div {
+        margin-bottom: 0.14rem;
+    }
+    .mobile-footer-box3 {
+        width: 0.8rem;
+        overflow: hidden;
+        float: right;
+        margin-right: 0.59rem;
+    }
+    .mobile-footer-box3 div {
+        margin-bottom: 0.14rem;
+    }
+    .mobile-e-title {
+        color: #ffffff;
+        font-weight: bold;
+        margin-left: 0.59rem;
+        margin-top: 0.44rem;
+    }
 }
 
 @media screen and (min-width: 751px) {
@@ -1002,6 +1056,9 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         display: none;
     }
     .mobile-history {
+        display: none;
+    }
+    .mobile-footer {
         display: none;
     }
 }
