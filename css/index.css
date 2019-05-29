@@ -644,9 +644,8 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     line-height: 26px;
 }
 
-
 @media screen and (max-width: 750px) {
-    .turing-network-mobile .title{
+    .turing-network-mobile .title {
         font-size: 0.3rem;
     }
     .turing-network-mobile .discribe {
@@ -662,7 +661,57 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         line-height: 0.33rem;
         font-size: 0.1rem;
     }
-    .block-chain-network-mobile .second-title{
+    .block-chain-network-mobile .second-title {
         font-size: 0.16rem;
+    }
+    .top-content {
+        display: none;
+    }
+    .mobile-nav {
+        background-image: url('../images/topbg.png');
+        width: 3.75rem;
+        height: 1.185rem;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+    .mobile-nav .mobile-logo {
+        width: 1.22rem;
+        height: 0.29rem;
+        float: left;
+        margin-top: 0.16rem;
+        margin-left: 0.15rem;
+    }
+    .mobile-nav .mobile-ul {
+        float: left;
+        width: 2.38rem;
+    }
+    .mobile-nav .mobile-ul ul {
+        overflow: hidden;
+    }
+    .mobile-nav .mobile-ul ul li {
+        float: left;
+        font-size: 0.14rem;
+        width: 0.63rem;
+        height: 0.14rem;
+        line-height: 0.14rem;
+        margin-top: 0.24rem;
+        font-weight: bold;
+    }
+    .mobile-nav .mobile-ul ul li:first-child {
+        width: 0.81rem;
+        margin-left: 0.29rem;
+    }
+    .mobile-nav .mobile-ul ul li:last-child {
+        width: 0.16rem;
+        float: right;
+        margin-right: 0.15rem;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    .mobile-nav {
+        display: none;
     }
 }

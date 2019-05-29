@@ -15,10 +15,10 @@
     <script src="js/jquery/dist/jquery.min.js"></script>
     <script src="js/jquery.i18n.properties-1.0.9.js"></script>
     <script>
-        (function (doc, win) {
+        (function(doc, win) {
             var docEl = doc.documentElement,
                 resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-                recalc = function () {
+                recalc = function() {
                     var clientWidth = docEl.clientWidth;
                     if (!clientWidth) return;
                     docEl.style.fontSize = 200 * (clientWidth / 750) + 'px';
@@ -79,6 +79,22 @@
                 </div>
             </div>
         </nav>
+    </div>
+    <div class="mobile-nav">
+        <img class="mobile-logo" src="./images/logo1.png" alt="">
+        <div class="mobile-ul">
+            <ul>
+                <li>
+                    <a class="a5" href="./book.pdf" target="_blank">白皮书</a>
+                    <div class="under-line"></div>
+                </li>
+                <li class="fanyi">
+                    <a class="a6">语言切换</a>
+                    <div class="under-line"></div>
+                </li>
+                <li class="fanyi"><img src="images/transfer.png" class="transfer-img" /></li>
+            </ul>
+        </div>
     </div>
     <!-- turing network-->
     <div class="turing-network turing-network-mobile">
