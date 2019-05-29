@@ -698,15 +698,23 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         line-height: 0.14rem;
         margin-top: 0.24rem;
         font-weight: bold;
+        text-align: center;
     }
     .mobile-nav .mobile-ul ul li:first-child {
         width: 0.81rem;
         margin-left: 0.29rem;
+        margin-right: 17px;
     }
     .mobile-nav .mobile-ul ul li:last-child {
         width: 0.16rem;
         float: right;
         margin-right: 0.15rem;
+    }
+    .hua-box {
+        display: none;
+    }
+    .mobile-history {
+        width: 3.75rem;
     }
 }
 

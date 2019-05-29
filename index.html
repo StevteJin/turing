@@ -115,7 +115,7 @@
             <!-- <div class="try-yourself a14">Try it yourself：14 days free. No credit required.</div> -->
         </div>
     </div>
-    <!-- Today's quota -->
+
     <div class="today-quota">
         <div class="container">
             <!-- <div class="third-title a15">今日额度</div> -->
@@ -219,6 +219,19 @@
             </div>
             <div id="sliderParent"></div>
         </div>
+    </div>
+    <div class="mobile-history">
+        <div id="content6"></div>
+        <script id="test6" type="text/html">
+            {{each huaData as value i}}
+            <div class="huahua">
+                <div class='{{value.class}} color'></div>
+                <div class="hua-date">{{value.date}}</div>
+                <div class="hua-title {{value.a}}">{{value.title}}</div>
+                <div class="hua-content {{value.a1}}">{{value.content}}</div>
+            </div>
+            {{/each}}
+        </script>
     </div>
     <script src="./js/huadong.js"></script>
 
