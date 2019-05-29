@@ -197,12 +197,11 @@
         </div>
     </div>
 
-    <!--这里就是左右滑动的那个滑动条 start-->
+
     <link rel="stylesheet" href="./css/jackwei.slider.css">
     <script src="./js/jackwei.slider.js"></script>
     <div class="hua-box">
         <div class="hua-width">
-            <!--空盒子-->
             <div class="empty-box container"></div>
             <div class="big-hua-box">
                 <div id="content6"></div>
@@ -221,21 +220,26 @@
         </div>
     </div>
     <div class="mobile-history">
-        <div id="content6"></div>
-        <script id="test6" type="text/html">
+        <div class="mobile-history-num"></div>
+        <div class="mobile-history-showbox">
+            <div id="content7"></div>
+        </div>
+        <div class="mobile_history_arror_box">
+            <div id="mobile_history_arror_left"></div>
+            <div id="mobile_history_arror_right"></div>
+        </div>
+        <script id="test7" type="text/html">
             {{each huaData as value i}}
-            <div class="huahua">
-                <div class='{{value.class}} color'></div>
-                <div class="hua-date">{{value.date}}</div>
-                <div class="hua-title {{value.a}}">{{value.title}}</div>
-                <div class="hua-content {{value.a1}}">{{value.content}}</div>
+            <div class="mobile-history-box">
+                <div class="mobile-history-date">{{value.date}}</div>
+                <div class="mobile-history-title {{value.a}}">{{value.title}}</div>
+                <div class="mobile-history-content {{value.a1}}">{{value.content}}</div>
             </div>
             {{/each}}
         </script>
     </div>
     <script src="./js/huadong.js"></script>
 
-    <!--这里就是左右滑动的那个滑动条 end-->
     <!--Creative team-->
     <!-- <div class="creative-team do-jump">
         <div class="container">
@@ -364,9 +368,9 @@
 <script>
     $(function() {
         window.onload = function() {
-                setTimeout(function() {
-                    $(window).scrollTop(0)
-                }, 10);
+                // setTimeout(function() {
+                //     $(window).scrollTop(0)
+                // }, 10);
             }
             // 导航条选中
         var len = $('.navbar-right .topNav').length;

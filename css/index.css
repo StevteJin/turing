@@ -660,8 +660,11 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         height: 1.185rem;
         background-size: 100%;
         background-repeat: no-repeat;
-        background-color: #ffffff;
         overflow: hidden;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        z-index: 100000;
     }
     .mobile-nav .mobile-logo {
         width: 1.22rem;
@@ -768,11 +771,86 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     }
     .mobile-history {
         width: 3.75rem;
+        height: 4.99rem;
+        overflow: hidden;
+        background-image: url('../images/mobile-history-bg.png');
+        background-size: 100% 100%;
+    }
+    footer {
+        margin-top: 0px;
+    }
+    .mobile-history-showbox {
+        width: 2.3rem;
+        height: 2.3rem;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-top: 0.42rem;
+    }
+    .mobile-history-box {
+        width: 2.3rem;
+        float: left;
+    }
+    .mobile-history-box .mobile-history-date {
+        color: #FF2C7A;
+        font-size: 0.16rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0.45rem;
+    }
+    .mobile-history-box .mobile-history-title {
+        font-size: 0.15rem;
+        margin-bottom: 0.2rem;
+        font-weight: bold;
+        color: #484A65;
+        text-align: center;
+    }
+    .mobile-history-box .mobile-history-content {
+        font-size: 0.1rem;
+        color: #484A65;
+        text-align: left;
+    }
+    .mobile_history_arror_box {
+        width: 0.94rem;
+        margin: 0 auto;
+    }
+    .mobile_history_arror_box div {
+        width: 0.34rem;
+        height: 0.34rem;
+        float: left;
+    }
+    .mobile_history_arror_box #mobile_history_arror_left {
+        background-image: url('../images/arror.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-right: 0.26rem;
+    }
+    .mobile_history_arror_box #mobile_history_arror_right {
+        background-image: url('../images/arror.png');
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .mobile-history-num {
+        width: 2.03rem;
+        height: 0.03rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+    .mobile-history-num span {
+        background-color: #EDEDED;
+        height: 0.03rem;
+        display: inline-block;
+        overflow: hidden;
     }
 }
 
 @media screen and (min-width: 751px) {
     .mobile-nav {
+        display: none;
+    }
+    .mobile-history {
         display: none;
     }
 }

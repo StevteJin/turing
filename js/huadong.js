@@ -25,7 +25,38 @@ $(function () {
         .setOnStopDragCallback(function () {
             //console.log('stop');
         });
-
+    //移动端点击左右滑
+    var mobileBigWidth = $('.mobile-history-box').width() *($('.mobile-history-box').length+1);
+    $("#content7").css("width", mobileBigWidth + 'px');
+    for(let i=0;i<$('.mobile-history-box').length;i++){
+        $(".mobile-history-num").append('<span></span>');
+    }
+    let mobileNumWidth= $(".mobile-history-num").width() / $(".mobile-history-num span").length;
+    $(".mobile-history-num span").css("width",mobileNumWidth+'px');
+    let index=0;
+    $(".mobile-history-num span").eq(index).css('backgroundColor','#FF2C7A');
+    $("#mobile_history_arror_left").on('click',function(){
+        if(index>0){
+            index--
+        }else{
+            index=$('.mobile-history-box').length-1
+        }
+        $(".mobile-history-num span").css('backgroundColor','#EDEDED');
+        $(".mobile-history-num span").eq(index).css('backgroundColor','#FF2C7A');
+        let mobileMoveWidth=$(".mobile-history-box").width()*index;
+        $("#content7").css('marginLeft',-mobileMoveWidth+'px');
+    })
+    $("#mobile_history_arror_right").on('click',function(){
+        if(index<$('.mobile-history-box').length-1){
+            index++;
+        }else{
+            index=0;
+        }
+        $(".mobile-history-num span").css('backgroundColor','#EDEDED');
+        $(".mobile-history-num span").eq(index).css('backgroundColor','#FF2C7A');
+        let mobileMoveWidth=$(".mobile-history-box").width()*index;
+        $("#content7").css('marginLeft',-mobileMoveWidth+'px');
+    })
     //国际化
     let witchLanguage='en';
     function loadProperties(language) {

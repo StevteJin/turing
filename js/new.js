@@ -264,6 +264,11 @@ var data6 = {
 var html6 = template('test6', data6);
 document.getElementById('content6').innerHTML = html6;
 
+var data7 = {
+    huaData: hua_data
+};
+var html7 = template('test7', data7);
+document.getElementById('content7').innerHTML = html7;
 
 var data5 = {
     bottomData: bottom_icon
