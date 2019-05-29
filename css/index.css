@@ -828,6 +828,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         padding-left: 0;
     }
     .web-second-mobile .fourth-title {
+        padding: 0 0.15rem;
         font-size: 0.17rem;
         margin: 0 auto;
     }
@@ -945,7 +946,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         background-size: 100%;
     }
     .application-mask-mobile .mask-body .left-part {
-        padding-top: 0.58rem;
+        padding-top: 0.45rem;
     }
     .application-mask-mobile .mask-body .left-part img{
         width: 0.94rem;
@@ -974,7 +975,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         margin-bottom: 0.2rem;
     }
     .application-mask-mobile .mask-body .box:nth-child(2) .title {
-        width: 1.42rem;
+        width: 1.5rem;
         border-bottom: 1px solid #595959;
         padding-top: 0.2rem;
         padding-bottom: 0.16rem;
@@ -983,12 +984,13 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     .application-mask-mobile .mask-body .right-part .detail {
         width: 2.81rem;
         height: auto;
-        padding: 0.14rem 0.25rem;
+        padding: 0.14rem 0.15rem;
         border-radius: 1px;
         border:1px solid #595959;
         margin: 0 auto;
         line-height: 1.5;
         font-size: 0.1rem;
+        text-align: left;
     }
     .application-mask-mobile .close-mobile {
         display: block;
@@ -1001,6 +1003,9 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     .investors-mask-mobile .mask-body .left-part img {
         width: 1.44rem;
         height: 1.44rem;
+    }
+    .investors-mask-mobile .mask-body .box:nth-child(1) .title {
+        margin-bottom: 0;
     }
     .hua-box {
         display: none;
