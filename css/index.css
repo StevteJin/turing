@@ -307,7 +307,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     display: none;
     font-size: 53px;
     font-weight: bold;
-    color: #FF2C7A;
+    color: #969696;
 }
 
 .img100 {
@@ -408,7 +408,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     box-sizing: border-box; */
     text-align: center;
     line-height: 61px;
-    color: #000;
+    color: #969696;
     font-size: 20px;
 }
 
@@ -685,8 +685,10 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     }
     .mobile-nav .mobile-ul ul {
         overflow: hidden;
+        list-style: none;
     }
     .mobile-nav .mobile-ul ul li {
+        list-style: none;
         float: left;
         font-size: 0.14rem;
         width: 0.63rem;
@@ -695,6 +697,10 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         margin-top: 0.24rem;
         font-weight: bold;
         text-align: center;
+    }
+    .mobile-nav .mobile-ul ul li a {
+        color: #333333;
+        text-decoration: none;
     }
     .mobile-nav .mobile-ul ul li:first-child {
         width: 0.81rem;
@@ -748,7 +754,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         margin: 0 auto;
         width: 2.97rem;
         height: 0.33rem;
-        border: 1px solid #FF2C7A;
+        border: 1px solid #969696;
     }
     .today-quota-mobile .finish-progress {
         border-top: 0.31rem solid #FF2C7A;
