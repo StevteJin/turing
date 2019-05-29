@@ -643,3 +643,10 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     width: 330px;
     line-height: 26px;
 }
+
+
+@media screen and (max-width: 750px) {
+    .turing-network-mobile .title{
+        font-size: 0.3rem;
+    }
+}

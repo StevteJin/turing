@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>turing network</title>
     <link href="js/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
@@ -14,6 +14,20 @@
 
     <script src="js/jquery/dist/jquery.min.js"></script>
     <script src="js/jquery.i18n.properties-1.0.9.js"></script>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 200 * (clientWidth / 750) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
 </head>
 
 <body>
@@ -67,7 +81,7 @@
         </nav>
     </div>
     <!-- turing network-->
-    <div class="turing-network">
+    <div class="turing-network turing-network-mobile">
         <div class="container">
             <div class="title a7">图灵网络</div>
             <div class="discribe a8">图灵网络将帮助全球互联网用户</div>
