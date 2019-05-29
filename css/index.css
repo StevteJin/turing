@@ -651,6 +651,12 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 }
 
 @media screen and (max-width: 750px) {
+    .bg-img {
+        width: 100%;
+        height: 17.15rem;
+        background: url(../images/bg_mobile.png) 100% no-repeat;
+        background-size: 100%;
+    }
     .top-content {
         display: none;
     }
@@ -697,21 +703,34 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         float: right;
         margin-right: 0.15rem;
     }
+    .turing-network-mobile {
+        padding-top: 0;
+    }
     .turing-network-mobile .title {
         font-size: 0.3rem;
+        margin-bottom: 0.1rem;
     }
     .turing-network-mobile .discribe {
         width: auto;
         font-size: 0.11rem;
+        line-height: 1.5;
+    }
+    .turing-network-mobile .discribe1 {
+        margin-top: 0;
     }
     .turing-network-mobile .dividing-line {
         width: 2.23rem;
+        margin: 0.24rem auto;
     }
     .turing-network-mobile .turing-network-btn {
         width: 2.1rem;
         height: 0.33rem;
         line-height: 0.33rem;
         font-size: 0.1rem;
+        margin-bottom: 0.6rem;
+    }
+    .block-chain-network-mobile{
+        margin-bottom: 0.97rem;
     }
     .block-chain-network-mobile .second-title {
         font-size: 0.16rem;
@@ -719,6 +738,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     .today-quota-mobile .third-title {
         display: block;
         font-size: 0.27rem;
+        margin-bottom: 0.1rem;
     }
     .today-quota-mobile .complete-progress {
         display: block;
@@ -745,9 +765,11 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     .today-quota-mobile .inner-box {
         width: 2.97rem;
         font-size: 0.15rem;
+        margin-bottom: 0.7rem;
     }
     .today-quota-mobile .inner-box .investors {
         float: none;
+        margin-top: 0.1rem;
         width: 2.1rem;
         height: 0.5rem;
         line-height: 0.5rem;
@@ -757,11 +779,88 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     .today-quota-mobile .inner-box .super-node-application {
         float: none;
         margin-left: 0.87rem;
+        margin-top: 0.17rem;
         width: 2.1rem;
         height: 0.33rem;
         line-height: 0.33rem;
         background: url('../images/application_mobile.png');
         background-size: 100%;
+    }
+    .application-layer-design-mobile {
+        margin-bottom: 0.3rem;
+    }
+    .application-layer-design-mobile .fourth-title {
+        font-size: 0.17rem;
+        margin: 0 auto 0.76rem;
+    }
+    .application-layer-design-mobile .design-item {
+        margin-bottom: 0.33rem;
+    }
+    .application-layer-design-mobile .design-left {
+        padding-right: 0.33rem;
+        padding-left: 0.7rem;
+    }
+    .application-layer-design-mobile .img100 {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    .application-layer-design-mobile .design-title {
+        font-size: 0.13rem;
+        margin-bottom: 0.07rem;
+    }
+    .application-layer-design-mobile .design-detail {
+        width: 1.24rem;
+        height: 0.72rem;
+        font-size: 0.1rem;
+        line-height: 1.5;
+    }
+    .web-second-mobile .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .web-second-mobile .fourth-title {
+        font-size: 0.17rem;
+        margin: 0 auto;
+    }
+    .web-second-mobile #content3 {
+        margin-top: 0;
+    }
+    .web-second-mobile #content3 .second-box {
+        width: 3.6rem;
+        height: 5.9rem;
+        margin: 0 auto;
+        background-image: url("../images/web_second_bg.png");
+        background-size: 100%;
+        background-color: transparent;
+    }
+    .web-second-mobile #content3 .second-box .col1 {
+        padding-top: 1.03rem;
+        padding-bottom: 0.56rem;
+    }
+    .web-second #content3 .second-box .col1 div {
+        width: 100%;
+        border-right: none;
+        text-align: center;
+    }
+    .web-second-mobile #content3 .second-box .col1 img {
+        width: 1.1rem;
+        height: 1.1rem;
+        margin: 0 auto;
+    }
+    .web-second-mobile #content3 .second-box .col2 {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0.93rem;
+    }
+    .web-second-mobile #content3 .second-box .col2 .col-title {
+        font-size: 0.15rem;
+        margin-bottom: 0.20rem;
+    }
+    .web-second-mobile #content3 .second-box .col2 .col-content {
+        color: #484A65;
+        font-size: 0.1rem;
+        line-height: 1.5;
+        width: 1.88rem;
     }
     .hua-box {
         display: none;
