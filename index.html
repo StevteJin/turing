@@ -100,15 +100,16 @@
         </div>
     </div>
     <!-- Today's quota -->
-    <div class="today-quota">
+    <div class="today-quota today-quota-mobile">
         <div class="container">
-            <!-- <div class="third-title a15">今日额度</div> -->
-            <!-- <div class="complete-progress">
+            <div class="third-title a15">今日额度</div>
+            <div class="percentage">70%</div>
+            <div class="complete-progress">
                 <div class="finish-progress"></div>
                 <div class="finish-count"><span class="a16">已抢</span> <span class="num">10,000,0</span>
                 </div>
-                <div class="percentage">70%</div>
-            </div> -->
+                <!-- <div class="percentage">70%</div> -->
+            </div>
             <div class="inner-box">
                 <div class="investors a17" id="investors">投资者</div>
                 <div class="super-node-application a18" id="application">超级节点申请</div>
@@ -436,6 +437,7 @@
         }
         total = commafy(total);
         $(".today-quota .finish-progress").css("width", percent / 100 * 844 + "px");
+        $(".today-quota-mobile .finish-progress").css("width", percent / 100 * 2.97 + "rem");
         $(".finish-count .num").html(total);
         $(".percentage").html(percent + '%');
     });

@@ -304,6 +304,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 }
 
 .today-quota .third-title {
+    display: none;
     font-size: 53px;
     font-weight: bold;
     color: #FF2C7A;
@@ -365,7 +366,12 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     text-align: left;
 }
 
+.today-quota .percentage {
+    display: none;
+}
+
 .today-quota .complete-progress {
+    display: none;
     margin: 44px auto 0;
     width: 844px;
     height: 65px;
@@ -664,5 +670,52 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     }
     .block-chain-network-mobile .second-title{
         font-size: 0.16rem;
+    }
+    .today-quota-mobile .third-title{
+        display:  block;
+        font-size: 0.27rem;
+    }
+    .today-quota-mobile .complete-progress{
+        display:  block;
+        margin: 0 auto;
+        width: 2.97rem;
+        height: 0.33rem;
+        border: 1px solid #FF2C7A;
+    }
+    .today-quota-mobile .finish-progress {
+        border-top: 0.31rem solid #FF2C7A;
+        border-right: 0.08rem solid transparent;
+    }
+    .today-quota-mobile .finish-count {
+        height: 100%;
+        line-height: 0.33rem;
+        font-size: 0.1rem;
+    }
+    .today-quota-mobile .percentage {
+        display: block;
+        line-height: 0.18rem;
+        font-size: 0.1rem;
+        color: #FF2C7A;
+    }
+    .today-quota-mobile .inner-box {
+        width: 2.97rem;
+        font-size: 0.15rem;
+    }
+    .today-quota-mobile .inner-box .investors {
+        float: none;
+        width: 2.1rem;
+        height: 0.5rem;
+        line-height: 0.5rem;
+        background: url('../images/investors_mobile.png');
+        background-size: 100%;
+    }
+    .today-quota-mobile .inner-box .super-node-application {
+        float: none;
+        margin-left: 0.87rem;
+        width: 2.1rem;
+        height: 0.33rem;
+        line-height: 0.33rem;
+        background: url('../images/application_mobile.png');
+        background-size: 100%;
     }
 }
