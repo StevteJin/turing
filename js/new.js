@@ -6,6 +6,9 @@ var html = template('test', data);
 document.getElementById('content').innerHTML = html;
 
 var img_icon = [{
+    class: 'camera1',
+    src: './images/ercode.png'
+},{
     class: 'facebook',
     src: './images/facebook.png'
 }, {

@@ -106,7 +106,7 @@ footer .content-box .center-box #content div {
     margin-bottom: 25px;
 }
 
-footer .content-box .right-box .top-box {}
+footer .content-box .right-box .top-box {position: relative;}
 
 footer .content-box .right-box .top-box .top-name {
     color: #ffffff;
@@ -142,7 +142,11 @@ footer .content-box .right-box .top-box #content1 .camera {
     width: 20px;
     height: 19px;
 }
-
+footer .content-box .right-box .top-box #content1 .camera1 {
+    width: 20px;
+    height: 19px;
+    cursor: pointer;
+}
 footer .content-box .right-box .top-box #content1 .player {
     width: 28px;
     height: 21px;
@@ -152,7 +156,21 @@ footer .content-box .right-box .top-box #content1 .m {
     width: 22px;
     height: 22px;
 }
-
+.personcode{
+    width:140px;
+    position: absolute;
+    left:0px;
+    top:70px;
+    display: none;
+}
+.personcode img{width:140px;}
+.entry-trangle{
+    width:0; 
+    height:0; 
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:10px solid #fff;
+}
 footer .content-box .right-box .bottom-box {}
 
 footer .content-box .right-box .bottom-box #content2 {

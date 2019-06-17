@@ -96,4 +96,10 @@ $(function () {
         mobileArr3[i]= mobileArr3[i].toUpperCase();
         $(".mobile-footer-box3").append('<div>'+mobileArr3[i]+'</div>');
     }
+    $(document).on('mouseover','.camera1',function(){
+        $('.personcode').show();
+    })
+    $(document).on('mouseout','.camera1',function(){
+        $('.personcode').hide();
+    })
 })
