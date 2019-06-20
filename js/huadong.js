@@ -81,7 +81,7 @@ $(function () {
         loadProperties(witchLanguage);
     })
     //这里移动端页脚
-    let mobileArr1=['about us','roadmap','team','partners','interest','careers'];
+    let mobileArr1=['about us','Contract ','team','partners','interest','careers'];
     for(var i=0;i<mobileArr1.length;i++){
         mobileArr1[i]= mobileArr1[i].toUpperCase();
         $(".mobile-footer-box1").append('<div>'+mobileArr1[i]+'</div>');

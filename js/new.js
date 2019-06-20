@@ -1,4 +1,4 @@
-var footer_name = ['about us', 'Twitter', 'RESOURCES', 'roadmap', 'blog', 'GitHub', 'team', 'telegram', 'Whitepaper', 'partners', 'reddit', 'faQ', 'interest', 'youtube', '  ', 'careers'];
+var footer_name = ['about us', 'Twitter', 'RESOURCES', 'Contract ', 'blog', 'GitHub', 'team', 'telegram', 'Whitepaper', 'partners', 'reddit', 'faQ', 'interest', 'youtube', '  ', 'careers'];
 var data = {
     sponsorsData: footer_name
 };

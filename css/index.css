@@ -86,7 +86,7 @@ footer .content-box .left-box .text {
 
 footer .content-box .center-box {
     margin-top: 96px;
-    margin-left: 90px;
+    margin-left: 80px;
 }
 
 footer .content-box .center-box #content {
@@ -1210,7 +1210,6 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     }
     .mobile-last {
         width: 100%;
-        height: 0.35rem;
         background-color: #43454F;
         position: absolute;
         left: 0px;
