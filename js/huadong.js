@@ -26,39 +26,39 @@ $(function () {
             //console.log('stop');
         });
     //移动端点击左右滑
-    var mobileBigWidth = $('.mobile-history-box').width() *($('.mobile-history-box').length+1);
+    var mobileBigWidth = $('.mobile-history-box').width() * ($('.mobile-history-box').length + 1);
     $("#content7").css("width", mobileBigWidth + 'px');
-    for(let i=0;i<$('.mobile-history-box').length;i++){
+    for (let i = 0; i < $('.mobile-history-box').length; i++) {
         $(".mobile-history-num").append('<span></span>');
     }
-    let mobileNumWidth= $(".mobile-history-num").width() / $(".mobile-history-num span").length;
-    $(".mobile-history-num span").css("width",mobileNumWidth+'px');
-    let index=0;
-    $(".mobile-history-num span").eq(index).css('backgroundColor','#FF2C7A');
-    $("#mobile_history_arror_left").on('click',function(){
-        if(index>0){
+    let mobileNumWidth = $(".mobile-history-num").width() / $(".mobile-history-num span").length;
+    $(".mobile-history-num span").css("width", mobileNumWidth + 'px');
+    let index = 0;
+    $(".mobile-history-num span").eq(index).css('backgroundColor', '#FF2C7A');
+    $("#mobile_history_arror_left").on('click', function () {
+        if (index > 0) {
             index--
-        }else{
-            index=$('.mobile-history-box').length-1
+        } else {
+            index = $('.mobile-history-box').length - 1
         }
-        $(".mobile-history-num span").css('backgroundColor','#EDEDED');
-        $(".mobile-history-num span").eq(index).css('backgroundColor','#FF2C7A');
-        let mobileMoveWidth=$(".mobile-history-box").width()*index;
-        $("#content7").css('marginLeft',-mobileMoveWidth+'px');
+        $(".mobile-history-num span").css('backgroundColor', '#EDEDED');
+        $(".mobile-history-num span").eq(index).css('backgroundColor', '#FF2C7A');
+        let mobileMoveWidth = $(".mobile-history-box").width() * index;
+        $("#content7").css('marginLeft', -mobileMoveWidth + 'px');
     })
-    $("#mobile_history_arror_right").on('click',function(){
-        if(index<$('.mobile-history-box').length-1){
+    $("#mobile_history_arror_right").on('click', function () {
+        if (index < $('.mobile-history-box').length - 1) {
             index++;
-        }else{
-            index=0;
+        } else {
+            index = 0;
         }
-        $(".mobile-history-num span").css('backgroundColor','#EDEDED');
-        $(".mobile-history-num span").eq(index).css('backgroundColor','#FF2C7A');
-        let mobileMoveWidth=$(".mobile-history-box").width()*index;
-        $("#content7").css('marginLeft',-mobileMoveWidth+'px');
+        $(".mobile-history-num span").css('backgroundColor', '#EDEDED');
+        $(".mobile-history-num span").eq(index).css('backgroundColor', '#FF2C7A');
+        let mobileMoveWidth = $(".mobile-history-box").width() * index;
+        $("#content7").css('marginLeft', -mobileMoveWidth + 'px');
     })
     //国际化
-    let witchLanguage='en';
+    let witchLanguage = 'en';
     function loadProperties(language) {
         jQuery.i18n.properties({//加载资浏览器语言对应的资源文件
             name: 'strings', //资源文件名称
@@ -66,40 +66,73 @@ $(function () {
             mode: 'map', //用Map的方式使用资源文件中的值
             language: language,
             callback: function () {//加载成功后设置显示内容
-                for(var i=1;i<90;i++){
-                    $('.a'+i).html($.i18n.prop('a'+i))
-                }   
+                for (var i = 1; i < 90; i++) {
+                    $('.a' + i).html($.i18n.prop('a' + i))
+                }
             }
         });
     }
-    $('.fanyi').on('click',function() {
-        if(witchLanguage=='en'){
-            witchLanguage='zh'
-        }else if(witchLanguage=='zh'){
-            witchLanguage='en'
+    $('.top-content .fanyi').on('mouseover', function () {
+        $('.language-box').show();
+    })
+    $('.top-content .fanyi').on('mouseout', function () {
+        $('.language-box').hide();
+
+    })
+    $('.language-box').on('.mouseover', function (e) {
+        e.stopPropagation();
+    })
+    $('.language-box').on('.mouseout', function () {
+        $('.language-box').hide();
+    })
+    if (witchLanguage == 'zh') {
+        $('.language-box .zh').css('color', '#BBBBBB');
+        $('.language-box .en').css('color', '#FF2C7A');
+    } else {
+        $('.language-box .zh').css('color', '#FF2C7A');
+        $('.language-box .en').css('color', '#BBBBBB');
+    }
+    $('.language-box .zh').on('click', function () {
+        witchLanguage = 'zh';
+        $('.language-box .zh').css('color', '#FF2C7A');
+        $('.language-box .en').css('color', '#BBBBBB');
+        loadProperties(witchLanguage);
+    })
+    $('.language-box .en').on('click', function () {
+        witchLanguage = 'en';
+        $('.language-box .zh').css('color', '#BBBBBB');
+        $('.language-box .en').css('color', '#FF2C7A');
+        loadProperties(witchLanguage);
+    })
+    $('.mobile-nav .fanyi').on('click', function () {
+        if (witchLanguage == 'en') {
+            witchLanguage = 'zh'
+        } else if (witchLanguage == 'zh') {
+            witchLanguage = 'en'
         }
         loadProperties(witchLanguage);
     })
+
     //这里移动端页脚
-    let mobileArr1=['about us','Contract ','team','partners','interest','careers'];
-    for(var i=0;i<mobileArr1.length;i++){
-        mobileArr1[i]= mobileArr1[i].toUpperCase();
-        $(".mobile-footer-box1").append('<div>'+mobileArr1[i]+'</div>');
+    let mobileArr1 = ['about us', 'Contract ', 'team', 'partners', 'interest', 'careers'];
+    for (var i = 0; i < mobileArr1.length; i++) {
+        mobileArr1[i] = mobileArr1[i].toUpperCase();
+        $(".mobile-footer-box1").append('<div>' + mobileArr1[i] + '</div>');
     }
-    let mobileArr2=['Twitter','blog','telegram','reddit','youtube'];
-    for(var i=0;i<mobileArr2.length;i++){
-        mobileArr2[i]= mobileArr2[i].toUpperCase();
-        $(".mobile-footer-box2").append('<div>'+mobileArr2[i]+'</div>');
+    let mobileArr2 = ['Twitter', 'blog', 'telegram', 'reddit', 'youtube'];
+    for (var i = 0; i < mobileArr2.length; i++) {
+        mobileArr2[i] = mobileArr2[i].toUpperCase();
+        $(".mobile-footer-box2").append('<div>' + mobileArr2[i] + '</div>');
     }
-    let mobileArr3=['RESOURCES','GitHub','Whitepaper','faQ'];
-    for(var i=0;i<mobileArr3.length;i++){
-        mobileArr3[i]= mobileArr3[i].toUpperCase();
-        $(".mobile-footer-box3").append('<div>'+mobileArr3[i]+'</div>');
+    let mobileArr3 = ['RESOURCES', 'GitHub', 'Whitepaper', 'faQ'];
+    for (var i = 0; i < mobileArr3.length; i++) {
+        mobileArr3[i] = mobileArr3[i].toUpperCase();
+        $(".mobile-footer-box3").append('<div>' + mobileArr3[i] + '</div>');
     }
-    $(document).on('mouseover','.camera1',function(){
+    $(document).on('mouseover', '.camera1', function () {
         $('.personcode').show();
     })
-    $(document).on('mouseout','.camera1',function(){
+    $(document).on('mouseout', '.camera1', function () {
         $('.personcode').hide();
     })
 })

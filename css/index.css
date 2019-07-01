@@ -106,7 +106,9 @@ footer .content-box .center-box #content div {
     margin-bottom: 25px;
 }
 
-footer .content-box .right-box .top-box {position: relative;}
+footer .content-box .right-box .top-box {
+    position: relative;
+}
 
 footer .content-box .right-box .top-box .top-name {
     color: #ffffff;
@@ -142,11 +144,13 @@ footer .content-box .right-box .top-box #content1 .camera {
     width: 20px;
     height: 19px;
 }
+
 footer .content-box .right-box .top-box #content1 .camera1 {
     width: 20px;
     height: 19px;
     cursor: pointer;
 }
+
 footer .content-box .right-box .top-box #content1 .player {
     width: 28px;
     height: 21px;
@@ -156,21 +160,27 @@ footer .content-box .right-box .top-box #content1 .m {
     width: 22px;
     height: 22px;
 }
-.personcode{
-    width:140px;
+
+.personcode {
+    width: 140px;
     position: absolute;
-    left:0px;
-    top:70px;
+    left: 0px;
+    top: 70px;
     display: none;
 }
-.personcode img{width:140px;}
-.entry-trangle{
-    width:0; 
-    height:0; 
-    border-left:10px solid transparent;
-    border-right:10px solid transparent;
-    border-bottom:10px solid #fff;
+
+.personcode img {
+    width: 140px;
 }
+
+.entry-trangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+}
+
 footer .content-box .right-box .bottom-box {}
 
 footer .content-box .right-box .bottom-box #content2 {
@@ -237,10 +247,34 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     color: #333333!important;
 }
 
+.navbar-right {
+    position: relative;
+}
+
+.language-box {
+    width: 120px;
+    height: 96px;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 54px;
+    box-shadow: 0px 0px 7px 0px rgba(202, 202, 202, 0.35);
+    border-radius: 4px;
+    padding-top:14px;
+    display: none;
+}
+
+.language-box div {
+    color: #BBBBBB;
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+}
+
 .transfer-img {
     cursor: pointer;
 }
-
 
 /* turing-network */
 
@@ -292,7 +326,6 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     cursor: pointer;
 }
 
-
 /* block-chain-network */
 
 .block-chain-network {
@@ -313,7 +346,6 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     font-size: 22px;
 }
 
-
 /* today-quota */
 
 .today-quota {
@@ -332,7 +364,6 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     width: 100px;
     height: 100px;
 }
-
 
 /*Application layer design for Web3.0*/
 
@@ -458,7 +489,6 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     cursor: pointer;
 }
 
-
 /* application-layer-design */
 
 .application-layer-design {
@@ -516,7 +546,6 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     text-align: left;
 }
 
-
 /* Creative team */
 
 .creative-team {
@@ -569,7 +598,6 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
-
 
 /* 弹窗 */
 
@@ -953,7 +981,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         left: 0;
         transform: translate(0);
     }
-    .application-mask-mobile .mask-top{
+    .application-mask-mobile .mask-top {
         display: none;
     }
     .application-mask-mobile .mask-body {
@@ -966,7 +994,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     .application-mask-mobile .mask-body .left-part {
         padding-top: 0.45rem;
     }
-    .application-mask-mobile .mask-body .left-part img{
+    .application-mask-mobile .mask-body .left-part img {
         width: 0.94rem;
         height: 0.89rem;
     }
@@ -1004,7 +1032,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         height: auto;
         padding: 0.14rem 0.15rem;
         border-radius: 1px;
-        border:1px solid #595959;
+        border: 1px solid #595959;
         margin: 0 auto;
         line-height: 1.5;
         font-size: 0.1rem;
@@ -1015,7 +1043,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
         width: 0.57rem;
         margin: -0.13rem auto 0;
     }
-    .investors-mask-mobile  {
+    .investors-mask-mobile {
         display: none;
     }
     .investors-mask-mobile .mask-body .left-part img {
