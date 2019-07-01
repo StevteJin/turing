@@ -369,12 +369,13 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 
 .web-second {
     overflow: hidden;
+    margin-top:-50px;
 }
 
 .web-second .second-title {}
 
 .web-second #content3 {
-    margin-top: 130px;
+    margin-top: -114px;
 }
 
 .web-second #content3 .second-box {
@@ -521,12 +522,12 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 }
 
 .application-layer-design .design-left {
-    padding-right: 62px;
+    padding-right: 36px;
 }
 
 .application-layer-design .design-title {
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 20px;
     color: #484A65;
     margin-bottom: 34px;
     text-align: left;
