@@ -193,6 +193,7 @@
             </div>
             <script id="test3" type="text/html">
                 {{each centerData as value i}}
+                {{if !(i%2)}}
                 <div class="second-box">
                     <!--基数为12-->
                     <div class="col-sm-3 col1">
@@ -201,10 +202,24 @@
                         </div>
                     </div>
                     <div class="col-sm-7 col2">
-                        <div class="col-title {{value.a}}">{{value.title}}</div>
+                        <div class="col-title title-ji {{value.a}}">{{value.title}}</div>
                         <div class="col-content {{value.a1}}">{{value.content}}</div>
                     </div>
                 </div>
+                {{else}}
+                <div class="second-box">
+                    <!--基数为12-->
+                    <div class="col-sm-7 col2">
+                        <div class="col-title title-ou {{value.a}}">{{value.title}}</div>
+                        <div class="col-content {{value.a1}}">{{value.content}}</div>
+                    </div>
+                    <div class="col-sm-3 col1">
+                        <div>
+                            <img src="{{value.img}}" alt="">
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
                 {{/each}}
             </script>
         </div>

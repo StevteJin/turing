@@ -411,7 +411,26 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     font-size: 24px;
     font-weight: bold;
 }
-
+.web-second #content3 .second-box .col2 .title-ji{
+    text-align: left;
+}
+.web-second #content3 .second-box .col2 .title-ji::after{
+    content:'—————';
+    color:#FF2C7A;
+    position: absolute;
+    top:94px;
+    left:14px;
+}
+.web-second #content3 .second-box .col2 .title-ou{
+    text-align: right;
+}
+.web-second #content3 .second-box .col2 .title-ou::after{
+    content:'—————';
+    color:#FF2C7A;
+    position: absolute;
+    top:94px;
+    right:14px;
+}
 .web-second #content3 .second-box .col2 .col-content {
     line-height: 26px;
     font-size: 14px;
