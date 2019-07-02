@@ -224,7 +224,6 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     bottom: 26px;
     width: 100%;
     height: 2px;
-    padding: 0 35px;
     box-sizing: border-box;
 }
 
@@ -275,7 +274,11 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 .transfer-img {
     cursor: pointer;
 }
-
+.transfer-img1 {
+    cursor: pointer;
+    width:16px;
+    height:12px;
+}
 /* turing-network */
 
 .turing-network {
@@ -390,7 +393,6 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 }
 
 .web-second #content3 .second-box .col1 div {
-    border-right: 1px solid #EDEDED;
     width: 90%;
 }
 
