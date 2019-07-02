@@ -2,6 +2,9 @@
     .container {
         width: 1200px;
     }
+    body {
+        background-color: #fff;
+    }
 }
 
 .bg-img {
@@ -33,9 +36,8 @@
 footer {
     background-color: #525562;
     width: 100%;
-    height: 445px;
+    height: 180px;
     overflow: hidden;
-    margin-top: -63px;
 }
 
 footer .content-box {
@@ -47,6 +49,9 @@ footer .content-box {
 
 footer .content-box .left-box {
     float: left;
+    border-right: 1px solid #868BA0;
+    padding-right: 41px;
+    margin-top: 39px;
 }
 
 footer .content-box .center-box {
@@ -55,6 +60,7 @@ footer .content-box .center-box {
 
 footer .content-box .right-box {
     float: left;
+    margin-left: 41px;
 }
 
 footer .content-box .left-box .logo-box {
@@ -68,20 +74,19 @@ footer .content-box .left-box .logo-box img {
 footer .content-box .left-box .logo-box img:first-child {
     width: 46px;
     height: 51px;
-    margin-top: 103px;
 }
 
 footer .content-box .left-box .logo-box img:last-child {
     width: 169px;
     height: 22px;
-    margin-top: 121px;
+    margin-top: 18px;
     margin-left: 51px;
 }
 
 footer .content-box .left-box .text {
-    font-size: 12px;
+    font-size: 14px;
     color: #ffffff;
-    margin-top: 218px;
+    margin-top: 50px;
 }
 
 footer .content-box .center-box {
@@ -115,95 +120,75 @@ footer .content-box .right-box .top-box .top-name {
     font-size: 14px;
     height: 16px;
     line-height: 16px;
-    margin-top: 96px;
+    margin-top: 32px;
     margin-bottom: 29px;
 }
 
 footer .content-box .right-box .top-box #content1 {}
 
-footer .content-box .right-box .top-box #content1 img {
-    float: left;
-    margin-right: 24px;
+footer .content-box .right-box .top-box #content1 .fb1 * {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 16px;
+    cursor: pointer;
 }
 
-footer .content-box .right-box .top-box #content1 img:last-child {
-    margin-right: 0px;
-}
-
-footer .content-box .right-box .top-box #content1 .facebook {
-    width: 11px;
-    height: 20px;
-}
-
-footer .content-box .right-box .top-box #content1 .bird {
+footer .content-box .right-box .top-box #content1 .fb1 .bird {
     width: 24px;
     height: 20px;
 }
 
-footer .content-box .right-box .top-box #content1 .camera {
-    width: 20px;
-    height: 19px;
-}
-
-footer .content-box .right-box .top-box #content1 .camera1 {
-    width: 20px;
-    height: 19px;
-    cursor: pointer;
-}
-
-footer .content-box .right-box .top-box #content1 .player {
-    width: 28px;
-    height: 21px;
-}
-
-footer .content-box .right-box .top-box #content1 .m {
+footer .content-box .right-box .top-box #content1 .fb1 .feiji {
     width: 22px;
     height: 22px;
 }
 
-.personcode {
-    width: 140px;
-    position: absolute;
-    left: 0px;
-    top: 70px;
-    display: none;
+footer .content-box .right-box .top-box #content1 .fb2 {
+    margin-top: 40px;
 }
 
-.personcode img {
-    width: 140px;
-}
-
-.entry-trangle {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #fff;
-}
-
-footer .content-box .right-box .bottom-box {}
-
-footer .content-box .right-box .bottom-box #content2 {
-    margin-top: 260px;
-}
-
-footer .content-box .right-box .bottom-box #content2 div {
-    float: left;
-    color: #ffffff;
+footer .content-box .right-box .top-box #content1 .fb2 * {
+    color: #fff;
     font-size: 14px;
-    line-height: 14px;
-    width: 97px;
-    border-right: 1px solid #ffffff;
-    box-sizing: border-box;
-    text-align: center;
+    border-right: 2px solid #868BA0;
+    padding-left: 11px;
+    padding-right: 11px;
 }
 
-footer .content-box .right-box .bottom-box #content2 div:first-child {
-    text-align: left;
+footer .content-box .right-box .top-box #content1 .fb2 span:first-child {
+    padding-left: 0px;
 }
 
-footer .content-box .right-box .bottom-box #content2 div:last-child {
+footer .content-box .right-box .top-box #content1 .fb2 span:last-child {
     border-right: none;
+}
+
+footer .content-box .last-right-box {
+    float: right;
+}
+
+footer .content-box .last-right-box * {
+    color: #fff;
+}
+
+footer .content-box .last-right-box .top-name {
+    margin-top: 31px;
+    margin-bottom: 19px;
+}
+
+footer .content-box .last-right-box .botbox {}
+
+footer .content-box .last-right-box .botbox img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+footer .content-box .last-right-box .botbox .div1 {
+    float: left;
+    font-size: 12px;
+    margin-right: 18px;
 }
 
 .navbar-inverse .navbar-nav>li {
@@ -260,7 +245,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     top: 54px;
     box-shadow: 0px 0px 7px 0px rgba(202, 202, 202, 0.35);
     border-radius: 4px;
-    padding-top:14px;
+    padding-top: 14px;
     display: none;
 }
 
@@ -274,11 +259,13 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 .transfer-img {
     cursor: pointer;
 }
+
 .transfer-img1 {
     cursor: pointer;
-    width:16px;
-    height:12px;
+    width: 16px;
+    height: 12px;
 }
+
 /* turing-network */
 
 .turing-network {
@@ -372,7 +359,7 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 
 .web-second {
     overflow: hidden;
-    margin-top:-50px;
+    margin-top: -50px;
 }
 
 .web-second .second-title {}
@@ -382,7 +369,6 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
 }
 
 .web-second #content3 .second-box {
-    background-color: #ffffff;
     overflow: hidden;
     margin-top: 30px;
 }
@@ -411,26 +397,31 @@ footer .content-box .right-box .bottom-box #content2 div:last-child {
     font-size: 24px;
     font-weight: bold;
 }
-.web-second #content3 .second-box .col2 .title-ji{
+
+.web-second #content3 .second-box .col2 .title-ji {
     text-align: left;
 }
-.web-second #content3 .second-box .col2 .title-ji::after{
-    content:'—————';
-    color:#FF2C7A;
+
+.web-second #content3 .second-box .col2 .title-ji::after {
+    content: '—————';
+    color: #FF2C7A;
     position: absolute;
-    top:94px;
-    left:14px;
+    top: 94px;
+    left: 14px;
 }
-.web-second #content3 .second-box .col2 .title-ou{
+
+.web-second #content3 .second-box .col2 .title-ou {
     text-align: right;
 }
-.web-second #content3 .second-box .col2 .title-ou::after{
-    content:'—————';
-    color:#FF2C7A;
+
+.web-second #content3 .second-box .col2 .title-ou::after {
+    content: '—————';
+    color: #FF2C7A;
     position: absolute;
-    top:94px;
-    right:14px;
+    top: 94px;
+    right: 14px;
 }
+
 .web-second #content3 .second-box .col2 .col-content {
     line-height: 26px;
     font-size: 14px;
