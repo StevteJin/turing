@@ -189,7 +189,8 @@
                 </span>
             </div>
             <div class="row">
-                <div id="content3"></div>
+                <div id="content3" class="pc-show"></div>
+                <div id="content66" class="mobile-show"></div>
             </div>
             <script id="test3" type="text/html">
                 {{each centerData as value i}}
@@ -220,6 +221,22 @@
                     </div>
                 </div>
                 {{/if}}
+                {{/each}}
+            </script>
+            <script id="test66" type="text/html">
+                {{each centerData as value i}}
+                <div class="second-box">
+                    <!--基数为12-->
+                    <div class="col-sm-3 col1">
+                        <div>
+                            <img src="{{value.img}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col2">
+                        <div class="col-title title-ji {{value.a}}">{{value.title}}</div>
+                        <div class="col-content {{value.a1}}">{{value.content}}</div>
+                    </div>
+                </div>
                 {{/each}}
             </script>
         </div>

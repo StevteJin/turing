@@ -219,6 +219,8 @@ var data3 = {
 var html3 = template('test3', data3);
 document.getElementById('content3').innerHTML = html3;
 
+var html66 = template('test66', data3);
+document.getElementById('content66').innerHTML = html66;
 var data6 = {
     huaData: hua_data
 };

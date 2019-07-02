@@ -8,6 +8,34 @@
         background-repeat: no-repeat;
         background-size: 101% 2240px;
     }
+    .web-second #content3 {
+        margin-top: -114px;
+        width: 1080px;
+        margin-left: 60px;
+    }
+    .web-second #content3 .second-box .col2 .title-ji {
+        text-align: left;
+    }
+    .web-second #content3 .second-box .col2 .title-ji::after {
+        content: '—————';
+        color: #FF2C7A;
+        position: absolute;
+        top: 94px;
+        left: 14px;
+    }
+    .web-second #content3 .second-box .col2 .title-ou {
+        text-align: right;
+    }
+    .web-second #content3 .second-box .col2 .title-ou::after {
+        content: '—————';
+        color: #FF2C7A;
+        position: absolute;
+        top: 94px;
+        right: 14px;
+    }
+    .mobile-show{
+        display: none;
+    }
 }
 
 .bg-img {
@@ -367,12 +395,6 @@ footer .content-box .last-right-box .botbox .div1 {
 
 .web-second .second-title {}
 
-.web-second #content3 {
-    margin-top: -114px;
-    width:1080px;
-    margin-left:60px;
-}
-
 .web-second #content3 .second-box {
     overflow: hidden;
     margin-top: 30px;
@@ -401,30 +423,6 @@ footer .content-box .last-right-box .botbox .div1 {
     color: #484A65;
     font-size: 24px;
     font-weight: bold;
-}
-
-.web-second #content3 .second-box .col2 .title-ji {
-    text-align: left;
-}
-
-.web-second #content3 .second-box .col2 .title-ji::after {
-    content: '—————';
-    color: #FF2C7A;
-    position: absolute;
-    top: 94px;
-    left: 14px;
-}
-
-.web-second #content3 .second-box .col2 .title-ou {
-    text-align: right;
-}
-
-.web-second #content3 .second-box .col2 .title-ou::after {
-    content: '—————';
-    color: #FF2C7A;
-    position: absolute;
-    top: 94px;
-    right: 14px;
 }
 
 .web-second #content3 .second-box .col2 .col-content {
@@ -715,6 +713,13 @@ footer .content-box .last-right-box .botbox .div1 {
 }
 
 @media screen and (max-width: 750px) {
+    .pc-show{display: none;}
+    body {
+        background-color: #fff;
+        background-image: url(../images/bg111.png);
+        background-repeat: no-repeat;
+        background-size: 101% 850px;
+    }
     .bg-img {
         width: 100%;
         height: 17.15rem;
@@ -896,10 +901,10 @@ footer .content-box .last-right-box .botbox .div1 {
         font-size: 0.17rem;
         margin: 0 auto;
     }
-    .web-second-mobile #content3 {
+    .web-second-mobile #content66 {
         margin-top: 0;
     }
-    .web-second-mobile #content3 .second-box {
+    .web-second-mobile #content66 .second-box {
         width: 3.6rem;
         height: 5.9rem;
         margin: 0 auto;
@@ -907,31 +912,31 @@ footer .content-box .last-right-box .botbox .div1 {
         background-size: 100%;
         background-color: transparent;
     }
-    .web-second-mobile #content3 .second-box .col1 {
+    .web-second-mobile #content66 .second-box .col1 {
         padding-top: 1.03rem;
         padding-bottom: 0.56rem;
     }
-    .web-second #content3 .second-box .col1 div {
+    .web-second #content66 .second-box .col1 div {
         width: 100%;
         border-right: none;
         text-align: center;
     }
-    .web-second-mobile #content3 .second-box .col1 img {
+    .web-second-mobile #content66 .second-box .col1 img {
         width: 1.1rem;
         height: 1.1rem;
         margin: 0 auto;
     }
-    .web-second-mobile #content3 .second-box .col2 {
+    .web-second-mobile #content66 .second-box .col2 {
         padding-top: 0;
         padding-bottom: 0;
         padding-left: 0.93rem;
     }
-    .web-second-mobile #content3 .second-box .col2 .col-title {
+    .web-second-mobile #content66 .second-box .col2 .col-title {
         font-size: 0.15rem;
         margin-bottom: 0.20rem;
         width: 1.88rem;
     }
-    .web-second-mobile #content3 .second-box .col2 .col-content {
+    .web-second-mobile #content66 .second-box .col2 .col-content {
         color: #484A65;
         font-size: 0.1rem;
         line-height: 1.5;
