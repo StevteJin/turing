@@ -17,20 +17,28 @@
         text-align: left;
     }
     .web-second #content3 .second-box .col2 .title-ji::after {
-        content: '—————';
+        content: '';
+        display: block;
+        width:98px;
+        height:4px;
         color: #FF2C7A;
+        background-color:#FF2C7A;
         position: absolute;
-        top: 94px;
+        top: 126px;
         left: 14px;
     }
     .web-second #content3 .second-box .col2 .title-ou {
         text-align: right;
     }
     .web-second #content3 .second-box .col2 .title-ou::after {
-        content: '—————';
+        content: '';
+        display: block;
+        width:98px;
+        height:4px;
         color: #FF2C7A;
+        background-color:#FF2C7A;
         position: absolute;
-        top: 94px;
+        top: 126px;
         right: 14px;
     }
     .mobile-show{
@@ -80,11 +88,22 @@ footer .content-box {
 
 footer .content-box .left-box {
     float: left;
-    border-right: 1px solid #868BA0;
+    /* border-right: 1px solid #868BA0; */
     padding-right: 41px;
     margin-top: 39px;
+    position: relative;
 }
-
+footer .content-box .left-box::after{
+    content:'';
+    color:#868BA0;
+    display: block;
+    height:80px;
+    width:2px;
+    background-color:#868BA0;
+    position: absolute;
+    top:11px;
+    left:365px;
+}
 footer .content-box .center-box {
     float: left;
 }
@@ -115,9 +134,9 @@ footer .content-box .left-box .logo-box img:last-child {
 }
 
 footer .content-box .left-box .text {
-    font-size: 14px;
+    font-size: 12px;
     color: #ffffff;
-    margin-top: 50px;
+    margin-top: 42px;
 }
 
 footer .content-box .center-box {
@@ -152,7 +171,7 @@ footer .content-box .right-box .top-box .top-name {
     height: 16px;
     line-height: 16px;
     margin-top: 32px;
-    margin-bottom: 29px;
+    margin-bottom: 22px;
 }
 
 footer .content-box .right-box .top-box #content1 {}
@@ -176,12 +195,12 @@ footer .content-box .right-box .top-box #content1 .fb1 .feiji {
 }
 
 footer .content-box .right-box .top-box #content1 .fb2 {
-    margin-top: 40px;
+    margin-top: 37px;
 }
 
 footer .content-box .right-box .top-box #content1 .fb2 * {
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     border-right: 2px solid #868BA0;
     padding-left: 11px;
     padding-right: 11px;
@@ -205,7 +224,7 @@ footer .content-box .last-right-box * {
 
 footer .content-box .last-right-box .top-name {
     margin-top: 31px;
-    margin-bottom: 19px;
+    margin-bottom: 14px;
 }
 
 footer .content-box .last-right-box .botbox {}
@@ -213,7 +232,7 @@ footer .content-box .last-right-box .botbox {}
 footer .content-box .last-right-box .botbox img {
     width: 60px;
     height: 60px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 footer .content-box .last-right-box .botbox .div1 {
@@ -398,8 +417,18 @@ footer .content-box .last-right-box .botbox .div1 {
 .web-second #content3 .second-box {
     overflow: hidden;
     margin-top: 30px;
+    padding-left:100px;
 }
-
+.web-second #content3 .second-box .leftcol{
+    margin-left:87px;
+}
+.web-second #content3 .second-box .colwidth{
+    width:63%;
+    margin-top:72px;
+}
+.web-second #content3 .second-box:nth-child(7) .colwidth{
+    margin-top:32px
+}
 .web-second #content3 .second-box .col1 {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -410,8 +439,7 @@ footer .content-box .last-right-box .botbox .div1 {
 }
 
 .web-second #content3 .second-box .col1 img {
-    width: 85%;
-    margin-left: 8%;
+    width: 140%;
 }
 
 .web-second #content3 .second-box .col2 {
@@ -429,6 +457,9 @@ footer .content-box .last-right-box .botbox .div1 {
     line-height: 26px;
     font-size: 14px;
     text-align: left;
+}
+.web-second #content3 .second-box .col2  .title-bottom{
+    margin-top:47px;
 }
 
 .today-quota .percentage {
